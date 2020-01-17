@@ -256,7 +256,7 @@ class OuterClass(object):
 
 When string interpolation is needed use the `format` method or the Python `f-string` for formatting strings. To simply join `n` number of strings use join. 
 
-The use of the operator `%` for string interpolation and the operator `+`  for concatenation is forbidden for performance- reasons.
+The use of the operator `%` for string interpolation and the operator `+`  for concatenation is forbidden for performance-related reasons.
 
 ```python
 # Yes:
@@ -268,14 +268,14 @@ x = f'name: {name}; score: {n}'
 # No:
 x = a + b
 x = '%s%s' % (a, b)  # use join in this case
-x = '%s, %s!' % (imperative, expletive)
+x = '%s, %s!' % (x, y)
 x = '{}{}'.format(a, b)  # use join in this case
-x = imperative + ', ' + expletive + '!'
+x = x + ', ' + y + '!'
 x = 'name: %s; score: %d' % (name, n)
 x = 'name: ' + name + '; score: ' + str(n)
 ```
 
-Avoid using the `+` and `+=` operators to accumulate a string within a loop. Since strings are immutable, this creates unnecessary temporary objects and results in quadratic rather than linear running time. Instead, add each substring to a list and `''.join` the list after the loop terminates (or, write each substring to a `io.BytesIO buffer`).
+Aa, avoid using the `+` and `+=` operators to accumulate a string within a loop. Since strings are immutable, this creates unnecessary temporary objects and results in quadratic rather than linear running time. Instead, add each substring to a list and `''.join` the list after the loop terminates (or, write each substring to a `io.BytesIO buffer`).
 
 ```python
 #Yes:
@@ -922,7 +922,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNjM0NzIxMSwtMTY3MDgxODgwOSw4OD
+eyJoaXN0b3J5IjpbLTc1ODQ2NzY5NiwtMTY3MDgxODgwOSw4OD
 czMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQxNjA3
 LC0yNDg3NTQ5MDEsLTE1NjM2NzY5NjgsMTU3Mjk2MDA4MSwtMT
 c0NTAwMzA3N119
