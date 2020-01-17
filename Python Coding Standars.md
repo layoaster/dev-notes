@@ -307,7 +307,7 @@ Although the trend is to prefer double quotes (`"`) over single ones (`'`), be c
   Gollum("Always the great lint. Watching. Watching.")
 ```
 
-The exception to t are `docstrings` which should always start and end with `"""` for multi-line strings rather than `'''`. 
+The exception to the rule are `docstrings` which should always use `"""` rather than `'''`. 
 
 ```python
 # Yes:
@@ -940,7 +940,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjY0MjQ4ODgsLTM0OTg1ODI5OCwxMz
+eyJoaXN0b3J5IjpbLTIwODkzNzg3NjcsLTM0OTg1ODI5OCwxMz
 g4Mjc5MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0
 NTIsMTY0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMT
 U2MzY3Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
