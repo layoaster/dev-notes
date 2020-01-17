@@ -306,8 +306,8 @@ Although the trend is to prefer double quotes (`"`) over single ones (`'`), be c
   Gollum('The lint. It burns. It burns us.')
   Gollum("Always the great lint. Watching. Watching.")
 ```
-
-The only exception being for  `"""` for multi-line strings rather than `'''`. Projects may choose to use `'''` for all non-docstring multi-line strings if and only if they also use `'` for regular strings. Doc strings must use `"""` regardless. Note that it is often cleaner to use implicit line joining since multi-line strings do not flow with the indentation of the rest of the program:
+Docstr
+The only exception being for m`"""` for multi-line strings rather than `'''`. Projects may choose to use `'''` for all non-docstring multi-line strings if and only if they also use `'` for regular strings. Doc strings must use `"""` regardless. Note that it is often cleaner to use implicit line joining since multi-line strings do not flow with the indentation of the rest of the program:
 
 ```python
 # Yes:
@@ -923,8 +923,8 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzk4Nzk4NDIsMTM4ODI3OTAyOSwtMT
-Y3MDgxODgwOSw4ODczMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3
-MDEsOTY5MjQxNjA3LC0yNDg3NTQ5MDEsLTE1NjM2NzY5NjgsMT
-U3Mjk2MDA4MSwtMTc0NTAwMzA3N119
+eyJoaXN0b3J5IjpbNjUyNDE0NTk2LDEzODgyNzkwMjksLTE2Nz
+A4MTg4MDksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAx
+LDk2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4LDE1Nz
+I5NjAwODEsLTE3NDUwMDMwNzddfQ==
 -->
