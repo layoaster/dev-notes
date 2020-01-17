@@ -10,18 +10,14 @@ We use a slightly modified version of the official [Style Guide for Python Code 
 * [Python Best Practices](http://docs.python-guide.org/en/latest/)
 * [Python Best Practice Patterns by Vladimir Keleshev](http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes/)
 
-## Quick Reference
-Already read the entire document and want to quickly check a style rule? Take a look at [this](https://github.com/trein/dev-best-practices/blob/master/sample_code.py) sample code which provides a simple summary of the main formatting rules.
-
 ## Code Style Rules
 
 ### Line Length
 
-* Do not use backslash line continuation.
-* Maximum line length is __80 characters__.
+* Maximum line length is **100 characters**.
 	* Exceptions:
-		* Long import statements.
 		* URLs in comments.
+* Do not use backslash line continuation.
 
 Make use of Python's implicit line joining inside parentheses, brackets and braces. If necessary, you can add an extra pair of parentheses around an expression.
 
@@ -923,5 +919,6 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3Mjk2MDA4MSwtMTc0NTAwMzA3N119
+eyJoaXN0b3J5IjpbLTkyNzQ2MzI0NSwxNTcyOTYwMDgxLC0xNz
+Q1MDAzMDc3XX0=
 -->
