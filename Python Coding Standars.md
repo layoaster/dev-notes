@@ -306,7 +306,8 @@ Although the trend is to prefer double quotes (`"`) over single ones (`'`), be c
   Gollum('The lint. It burns. It burns us.')
   Gollum("Always the great lint. Watching. Watching.")
 ```
-The exception this this rules are `docstrings` which should always start and end with `"""` for multi-line strings rather than `'''`. 
+
+The exception to t are `docstrings` which should always start and end with `"""` for multi-line strings rather than `'''`. 
 
 ```python
 # Yes:
@@ -319,11 +320,40 @@ def dispatch_request(self):
         not allowed.
     """
     pass
+
 # No:
-    print """This is pretty ugly.
-Don't do this.
-"""
+def dispatch_request(self):
+    '''
+    Actual Flask's view function. See base class.
+
+    :return: Corresponding method handler response.
+    :raises werkzeug.exception.HTTPException: Bad request or HTTP method
+        not allowed.
+    '''
+    pass
 ```
+
+### Naming Conventions
+
+- "Internal" means internal to a module or protected or private within a class.
+- Prepending a single underscore (`_`) has some support for protecting module variables and functions (not included with import * from). Prepending a double underscore (`__`) to an instance variable or method effectively serves to make the variable or method private to its class (using name mangling).
+- Place related classes and top-level functions together in a module. Unlike Java, there is no need to limit yourself to one class per module.
+- Use `CapWords` for class names, but `lower_with_under.py` for module names.
+- __Names to Avoid:__ Single character names except for counters or iterators dashes (-) in any package/module name `__double_leading_and_trailing_underscore__` names (reserved by Python)
+
+| Type                      | Public                | Internal              |
+|---------------------------|-----------------------|-----------------------|
+|Packages                   | `lower_with_under`      |                       |
+|Modules                    | `lower_with_under`      | `_lower_with_under`     |
+|Classes                    | `CapWords`              | `_CapWords`             |
+|Exceptions                 | `CapWords`              |                       |
+|Functions                  | `lower_with_under()`    | `_lower_with_under()`   |
+|Global/Class Constants     | `CAPS_WITH_UNDER`       | `_CAPS_WITH_UNDER`      |
+|Global/Class Variables     | `lower_with_under`      | `_lower_with_under`     |
+|Instance Variables         | `lower_with_under`      | `_lower_with_under` (protected) or `__lower_with_under` (private) |
+|Method Names               | `lower_with_under()`    | `_lower_with_under()` (protected) or `__lower_with_under()` (private) |
+|Function/Method Parameters | `lower_with_under`      |                       |
+|Local Variables            | `lower_with_under`      |                       |
 
 ### Files and Sockets
 
@@ -356,27 +386,8 @@ with contextlib.closing(urllib.urlopen("http://www.python.org/")) as front_page:
         print line
 ```
 
-### Naming Conventions
 
-- "Internal" means internal to a module or protected or private within a class.
-- Prepending a single underscore (`_`) has some support for protecting module variables and functions (not included with import * from). Prepending a double underscore (`__`) to an instance variable or method effectively serves to make the variable or method private to its class (using name mangling).
-- Place related classes and top-level functions together in a module. Unlike Java, there is no need to limit yourself to one class per module.
-- Use `CapWords` for class names, but `lower_with_under.py` for module names.
-- __Names to Avoid:__ Single character names except for counters or iterators dashes (-) in any package/module name `__double_leading_and_trailing_underscore__` names (reserved by Python)
 
-| Type                      | Public                | Internal              |
-|---------------------------|-----------------------|-----------------------|
-|Packages                   | `lower_with_under`      |                       |
-|Modules                    | `lower_with_under`      | `_lower_with_under`     |
-|Classes                    | `CapWords`              | `_CapWords`             |
-|Exceptions                 | `CapWords`              |                       |
-|Functions                  | `lower_with_under()`    | `_lower_with_under()`   |
-|Global/Class Constants     | `CAPS_WITH_UNDER`       | `_CAPS_WITH_UNDER`      |
-|Global/Class Variables     | `lower_with_under`      | `_lower_with_under`     |
-|Instance Variables         | `lower_with_under`      | `_lower_with_under` (protected) or `__lower_with_under` (private) |
-|Method Names               | `lower_with_under()`    | `_lower_with_under()` (protected) or `__lower_with_under()` (private) |
-|Function/Method Parameters | `lower_with_under`      |                       |
-|Local Variables            | `lower_with_under`      |                       |
 
 ### Comments
 
@@ -929,8 +940,8 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMDI2NDExOSwtMzQ5ODU4Mjk4LDEzOD
-gyNzkwMjksLTE2NzA4MTg4MDksODg3MzM5OTcyLDIxMTY2NjQ1
-MiwxNjQ0ODc3NzAxLDk2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNT
-YzNjc2OTY4LDE1NzI5NjAwODEsLTE3NDUwMDMwNzddfQ==
+eyJoaXN0b3J5IjpbLTE1MjY0MjQ4ODgsLTM0OTg1ODI5OCwxMz
+g4Mjc5MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0
+NTIsMTY0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMT
+U2MzY3Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
 -->
