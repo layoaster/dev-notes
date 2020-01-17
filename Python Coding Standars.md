@@ -306,7 +306,7 @@ Although the trend is to prefer double quotes (`"`) over single ones (`'`), be c
   Gollum('The lint. It burns. It burns us.')
   Gollum("Always the great lint. Watching. Watching.")
 ```
-Docstr
+Docstring should always 
 The only exception being for m`"""` for multi-line strings rather than `'''`. Projects may choose to use `'''` for all non-docstring multi-line strings if and only if they also use `'` for regular strings. Doc strings must use `"""` regardless. Note that it is often cleaner to use implicit line joining since multi-line strings do not flow with the indentation of the rest of the program:
 
 ```python
@@ -923,8 +923,8 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUyNDE0NTk2LDEzODgyNzkwMjksLTE2Nz
-A4MTg4MDksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAx
-LDk2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4LDE1Nz
-I5NjAwODEsLTE3NDUwMDMwNzddfQ==
+eyJoaXN0b3J5IjpbLTM0OTg1ODI5OCwxMzg4Mjc5MDI5LC0xNj
+cwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0NTIsMTY0NDg3Nzcw
+MSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3Njk2OCwxNT
+cyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
 -->
