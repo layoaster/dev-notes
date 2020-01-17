@@ -363,7 +363,7 @@ Be sure to use the right style for module, function, method and in-line comments
 Python has a unique commenting style using doc strings. A docstring is a string that is the first statement in a package, module, class or function. These strings can be extracted automatically through the `__doc__` member of the object and are used by pydoc. (Try running pydoc on your module to see how it looks.) We always use the three double-quote `"""` format for docstrings (per [PEP 257](http://www.python.org/dev/peps/pep-0257/)). A doc string should be organized as a summary line (one physical line) terminated by a period, question mark, or exclamation point, followed by a blank line, followed by the rest of the doc string starting at the same cursor position as the first quote of the first line. There are more formatting guidelines for doc strings below.
 
 #### Modules
-Really short description
+A Really short description of the module never hurts.
 
 #### Functions and Methods
 As used in this section "function" applies to methods, function, and generators.
@@ -905,8 +905,8 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzQyOTE2ODgsLTM0OTg1ODI5OCwxMz
-g4Mjc5MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0
-NTIsMTY0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMT
-U2MzY3Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
+eyJoaXN0b3J5IjpbLTcyNzUxMjM2MywtMzQ5ODU4Mjk4LDEzOD
+gyNzkwMjksLTE2NzA4MTg4MDksODg3MzM5OTcyLDIxMTY2NjQ1
+MiwxNjQ0ODc3NzAxLDk2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNT
+YzNjc2OTY4LDE1NzI5NjAwODEsLTE3NDUwMDMwNzddfQ==
 -->
