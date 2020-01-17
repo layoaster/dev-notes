@@ -368,10 +368,10 @@ There are three popular formats for docstring:
 * [Google](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 * [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html)
 
-Google style is more readable so we choose 
+The Google style is more readable and Sphinx supports it so documentation can be generated
 
 #### Modules
-A Really short description of the module never hurts.
+A really short description of the module never hurts.
 
 #### Functions and Methods
 As used in this section "function" applies to methods, function, and generators.
@@ -815,10 +815,10 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5ODA3MzU3MywxMjgzMzU4NTYxLDgyMz
-MzNDcyLDE3MTA1Mjc0NTksLTQxOTQzOTk1MSwtMTUxMDg2NTQ5
-OSwxMTk5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1ODI5OCwxMz
-g4Mjc5MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0
-NTIsMTY0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMT
-U2MzY3Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
+eyJoaXN0b3J5IjpbODgyODAwNzUsMTI4MzM1ODU2MSw4MjMzMz
+Q3MiwxNzEwNTI3NDU5LC00MTk0Mzk5NTEsLTE1MTA4NjU0OTks
+MTE5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4NTgyOTgsMTM4OD
+I3OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5NzIsMjExNjY2NDUy
+LDE2NDQ4Nzc3MDEsOTY5MjQxNjA3LC0yNDg3NTQ5MDEsLTE1Nj
+M2NzY5NjgsMTU3Mjk2MDA4MSwtMTc0NTAwMzA3N119
 -->
