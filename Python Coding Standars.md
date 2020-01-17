@@ -811,84 +811,12 @@ if not i % 10:
 ```
 Note that '0' (i.e., 0 as string) evaluates to true.
 
-### Lexical Scoping
 
-__Definition:__
-A nested Python function can refer to variables defined in enclosing functions, but can not assign to them. Variable bindings are resolved using lexical scoping, that is, based on the static program text. Any assignment to a name in a block will cause Python to treat all references to that name as a local variable, even if the use precedes the assignment. If a global declaration occurs, the name is treated as a global variable.
-
-An example of the use of this feature is:
-
-```python
-def get_adder(summand1):
-    """Returns a function that adds numbers to a given number."""
-    def adder(summand2):
-        return summand1 + summand2
-
-    return adder
-```
-
-__Pros:__
-Often results in clearer, more elegant code. Especially comforting to experienced Lisp and Scheme (and Haskell and ML and …) programmers.
-
-__Cons:__
-Can lead to confusing bugs. Such as this example based on PEP-0227:
-
-```python
-i = 4
-def foo(x):
-    def bar():
-        print i,
-    # ...
-    # A bunch of code here
-    # ...
-    for i in x:  # Ah, i *is* local to Foo, so this is what Bar sees
-        print i,
-    bar()
-```
-
-So foo([1, 2, 3]) will print 1 2 3 3, not 1 2 3 4.
-
-__Decision:__
-Okay to use.
-
-### Function and Method Decorators
-
-__Definition:__
-[Decorators for Functions and Methods](http://www.python.org/doc/2.4.3/whatsnew/node6.html) (a.k.a "the @ notation"). The most common decorators are `@classmethod` and `@staticmethod`, for converting ordinary methods to class or static methods. However, the decorator syntax allows for user-defined decorators as well. Specifically, for some function `my_decorator`, this:
-
-```python
-class C(object):
-    @my_decorator
-    def method(self):
-        # method body ...
-```
-
-is equivalent to:
-
-```python
-class C(object):
-    def method(self):
-        # method body ...
-    method = my_decorator(method)
-```
-
-__Pros:__
-Elegantly specifies some transformation on a method; the transformation might eliminate some repetitive code, enforce invariants, etc.
-
-__Cons:__
-Decorators can perform arbitrary operations on a function's arguments or return values, resulting in surprising implicit behavior. Additionally, decorators execute at import time. Failures in decorator code are pretty much impossible to recover from.
-
-__Decision:__
-Use decorators judiciously when there is a clear advantage. Decorators should follow the same import and naming guidelines as functions. Decorator pydoc should clearly state that the function is a decorator. Write unit tests for decorators.
-
-Avoid external dependencies in the decorator itself (e.g. don't rely on files, sockets, database connections, etc.), since they might not be available when the decorator runs (at import time, perhaps from pydoc or other tools). A decorator that is called with valid parameters should (as much as possible) be guaranteed to succeed in all cases.
-
-Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMDUyNzQ1OSwtNDE5NDM5OTUxLC0xNT
-EwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUxMjM2MywtMzQ5ODU4
-Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MDksODg3MzM5OTcyLD
-IxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0MTYwNywtMjQ4NzU0
-OTAxLC0xNTYzNjc2OTY4LDE1NzI5NjAwODEsLTE3NDUwMDMwNz
-ddfQ==
+eyJoaXN0b3J5IjpbODIzMzM0NzIsMTcxMDUyNzQ1OSwtNDE5ND
+M5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUxMjM2
+MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MDksOD
+g3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0MTYw
+NywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4LDE1NzI5NjAwODEsLT
+E3NDUwMDMwNzddfQ==
 -->
