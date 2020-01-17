@@ -293,7 +293,7 @@ for last_name, first_name in employee_list:
 
 ### String quotes
 
-Be consistent with your choice of string quote character within a file. Pick `'` or `"` and stick with it. If the module you are working on already uses `"`, stick with it. It is okay, however, to use the other quote character on a string to avoid the need to `\` escape within the string.
+Although the trend is to prefer double quotes `"` over single ones, be consistent with your choice of string quote character within a project. Pick `'` or `"` and stick with it. If the module you are working on already uses `"`, stick with it. It is okay, however, to use the other quote character on a string to avoid the need to `\` escape within the string.
 
 ```python
 # Yes:
@@ -923,7 +923,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDk5Mzg4LDEzODgyNzkwMjksLTE2Nz
+eyJoaXN0b3J5IjpbNjAxNzY4MDc3LDEzODgyNzkwMjksLTE2Nz
 A4MTg4MDksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAx
 LDk2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4LDE1Nz
 I5NjAwODEsLTE3NDUwMDMwNzddfQ==
