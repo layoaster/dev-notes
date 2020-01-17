@@ -258,16 +258,19 @@ When string interpolation is needed use the `format` method or the Python `f-str
 
 ```python
 # Yes:
-x = a + b
-x = '%s, %s!' % (imperative, expletive)
+x = ''.join([a, b])
+
 x = '{}, {}!'.format(imperative, expletive)
-x = 'name: %s; score: %d' % (name, n)
+
 x = 'name: {}; score: {}'.format(name, n)
 
 # No:
+x = a + b
 x = '%s%s' % (a, b)  # use + in this case
+x = '%s, %s!' % (imperative, expletive)
 x = '{}{}'.format(a, b)  # use + in this case
 x = imperative + ', ' + expletive + '!'
+x = 'name: %s; score: %d' % (name, n)
 x = 'name: ' + name + '; score: ' + str(n)
 ```
 
@@ -918,7 +921,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNTIwNDYwMSwxNjQ0ODc3NzAxLDk2OT
-I0MTYwNywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4LDE1NzI5NjAw
-ODEsLTE3NDUwMDMwNzddfQ==
+eyJoaXN0b3J5IjpbMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5Mj
+QxNjA3LC0yNDg3NTQ5MDEsLTE1NjM2NzY5NjgsMTU3Mjk2MDA4
+MSwtMTc0NTAwMzA3N119
 -->
