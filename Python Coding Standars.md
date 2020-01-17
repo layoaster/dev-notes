@@ -343,50 +343,17 @@ def dispatch_request(self):
 
 | Type                      | Public                | Internal              |
 |---------------------------|-----------------------|-----------------------|
-|Packages                   | `lower_with_under`      |                       |
-|Modules                    | `lower_with_under`      | `_lower_with_under`     |
-|Classes                    | `CapWords`              | `_CapWords`             |
-|Exceptions                 | `CapWords`              |                       |
-|Functions                  | `lower_with_under()`    | `_lower_with_under()`   |
-|Global/Class Constants     | `CAPS_WITH_UNDER`       | `_CAPS_WITH_UNDER`      |
-|Global/Class Variables     | `lower_with_under`      | `_lower_with_under`     |
-|Instance Variables         | `lower_with_under`      | `_lower_with_under` (protected) or `__lower_with_under` (private) |
+|Packages                   | `lower_with_under`      |                     |
+|Modules                    | `lower_with_under`      | `_lower_with_under` |
+|Classes                    | `CapWords`              | `_CapWords`         |
+|Exceptions                 | `CapWords`              |                     |
+|Functions                  | `lower_with_under()`    | `_lower_with_under()` |
+|Global/Class Constants     | `CAPS_WITH_UNDER`       | `_CAPS_WITH_UNDER`  |
+|Global/Class Variables     | `lower_with_under`      | `_lower_with_under` |
+|Instance Variables         | `lower_with_under`      | `_lower_with_under`                 (protected) or `__lower_with_under` (private) |
 |Method Names               | `lower_with_under()`    | `_lower_with_under()` (protected) or `__lower_with_under()` (private) |
-|Function/Method Parameters | `lower_with_under`      |                       |
-|Local Variables            | `lower_with_under`      |                       |
-
-### Files and Sockets
-
-Explicitly close files and sockets when done with them. Leaving files, sockets or other file-like objects open unnecessarily has many downsides, including:
-
-* They may consume limited system resources, such as file descriptors. Code that deals with many such objects may exhaust those resources unnecessarily if they're not returned to the system promptly after use.
-* Holding files open may prevent other actions being performed on them, such as moves or deletion.
-* Files and sockets that are shared throughout a program may inadvertantly be read from or written to after logically being closed. If they are actually closed, attempts to read or write from them will throw exceptions, making the problem known sooner.
-
-Furthermore, while files and sockets are automatically closed when the file object is destructed, tying the life-time of the file object to the state of the file is poor practice, for several reasons:
-
-* There are no guarantees as to when the runtime will actually run the file's destructor. Different Python implementations use different memory management techniques, such as delayed Garbage Collection, which may increase the object's lifetime arbitrarily and indefinitely.
-* Unexpected references to the file may keep it around longer than intended (e.g. in tracebacks of exceptions, inside globals, etc).
-
-The preferred way to manage files is using the `with` statement:
-
-```python
-with open("hello.txt") as hello_file:
-    for line in hello_file:
-        print line
-```
-        
-For file-like objects that do not support the `with` statement, use `contextlib.closing()`:
-
-```python
-import contextlib
-
-with contextlib.closing(urllib.urlopen("http://www.python.org/")) as front_page:
-    for line in front_page:
-        print line
-```
-
-
+|Function/Method Parameters | `lower_with_under`      |                     |
+|Local Variables            | `lower_with_under`      |                     |
 
 
 ### Comments
@@ -940,7 +907,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODkzNzg3NjcsLTM0OTg1ODI5OCwxMz
+eyJoaXN0b3J5IjpbLTE3MDE3MTI2MDAsLTM0OTg1ODI5OCwxMz
 g4Mjc5MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0
 NTIsMTY0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMT
 U2MzY3Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
