@@ -496,16 +496,16 @@ import sys
 import os, sys
 ```
 
-Imports are always put at the top of the file, just after any module comments and doc strings and before module globals and constants. Imports should be grouped with the order being most generic to least generic:
+Imports are always put at the top of the file, just after any module comments and docstrings and before module globals and constants. Imports should be grouped with the order being most generic to least generic:
 
 * standard library imports
 * third-party imports
 * application-specific imports
 
 Within each grouping:
-* `import` statemens should go before `from XZ` statements.
+* `import` statemens should go before `from X import ...` statements.
 * Imports should be sorted lexicographically, ignoring case, according to each module's full package path. 
-* 
+
 
 ```python
 import foo
@@ -894,7 +894,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNzA5MjQxMiwtMTUxMDg2NTQ5OSwxMT
+eyJoaXN0b3J5IjpbLTk4MDE1OTY5OSwtMTUxMDg2NTQ5OSwxMT
 k5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1ODI5OCwxMzg4Mjc5
 MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0NTIsMT
 Y0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3
