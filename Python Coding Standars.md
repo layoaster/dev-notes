@@ -254,7 +254,7 @@ class OuterClass(object):
 
 ### Strings
 
-When string interpolation is needed use the `format` method or the Python `f-string` for formatting strings, even when the parameters are all strings. To simply join `n` strings prefer join
+When string interpolation is needed use the `format` method or the Python `f-string` for formatting strings, even when the parameters are all strings. To simply join n number of strings use join.
 
 ```python
 # Yes:
@@ -918,7 +918,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMjM1ODY0NCwxNjQ0ODc3NzAxLDk2OT
+eyJoaXN0b3J5IjpbLTIxNTIwNDYwMSwxNjQ0ODc3NzAxLDk2OT
 I0MTYwNywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4LDE1NzI5NjAw
 ODEsLTE3NDUwMDMwNzddfQ==
 -->
