@@ -256,10 +256,12 @@ class OuterClass(object):
 
 When string interpolation is needed use the `format` method or the Python `f-string` for formatting strings, even when the parameters are all strings. To simply join n number of strings use join.
 
+The use of the `%` for string interpolation and 
+
 ```python
 # Yes:
 x = ''.join([a, b])
-x = '{}, {}!'.format(imperative, expletive)
+x = 'x: {}, y: {}!'.format(x, y)
 x = f'name: {name}; score: {n}'
 
 
@@ -920,7 +922,8 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0OD
-c3NzAxLDk2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4
-LDE1NzI5NjAwODEsLTE3NDUwMDMwNzddfQ==
+eyJoaXN0b3J5IjpbLTExOTg0NjA3OTQsODg3MzM5OTcyLDIxMT
+Y2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0MTYwNywtMjQ4NzU0OTAx
+LC0xNTYzNjc2OTY4LDE1NzI5NjAwODEsLTE3NDUwMDMwNzddfQ
+==
 -->
