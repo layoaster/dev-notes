@@ -254,9 +254,9 @@ class OuterClass(object):
 
 ### Strings
 
-When string interpolation is needed use the `format` method or the Python `f-string` for formatting strings, even when the parameters are all strings. To simply join n number of strings use join.
+When string interpolation is needed use the `format` method or the Python `f-string` for formatting strings. To simply join `n` number of strings use join. 
 
-The use of the operator `%` for string interpolation and the operator `+`  for 
+The use of the operator `%` for string interpolation and the operator `+`  for concatenation is forbidden for performance- reasons.
 
 ```python
 # Yes:
@@ -267,9 +267,9 @@ x = f'name: {name}; score: {n}'
 
 # No:
 x = a + b
-x = '%s%s' % (a, b)  # use + in this case
+x = '%s%s' % (a, b)  # use join in this case
 x = '%s, %s!' % (imperative, expletive)
-x = '{}{}'.format(a, b)  # use + in this case
+x = '{}{}'.format(a, b)  # use join in this case
 x = imperative + ', ' + expletive + '!'
 x = 'name: %s; score: %d' % (name, n)
 x = 'name: ' + name + '; score: ' + str(n)
@@ -922,8 +922,8 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzA4MTg4MDksODg3MzM5OTcyLDIxMT
-Y2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0MTYwNywtMjQ4NzU0OTAx
-LC0xNTYzNjc2OTY4LDE1NzI5NjAwODEsLTE3NDUwMDMwNzddfQ
-==
+eyJoaXN0b3J5IjpbMjAyNjM0NzIxMSwtMTY3MDgxODgwOSw4OD
+czMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQxNjA3
+LC0yNDg3NTQ5MDEsLTE1NjM2NzY5NjgsMTU3Mjk2MDA4MSwtMT
+c0NTAwMzA3N119
 -->
