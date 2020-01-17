@@ -224,7 +224,7 @@ The shebang we use is: `#!/usr/bin/env python`
 
 ### Classes
 
-If a class inherits from no other base classes, explicitly inherit from `object`. This also applies to nested classes.
+Since we oIf a class inherits from no other base classes, explicitly inherit from `object`. This also applies to nested classes.
 
 ```python
 # Yes:
@@ -252,7 +252,7 @@ class OuterClass:
         pass
 ```
 
-Inheriting from `object` is needed to make properties work properly, and it will protect your code from one particular potential incompatibility with Python 3000. It also defines special methods that implement the default semantics of objects including `__new__`, `__init__`, `__delattr__`, `__getattribute__`, `__setattr__`, `__hash__`, `__repr__`, and `__str__`.
+Inheriting from `object` is needed to make properties work properly, and it will protect your code from one particular potential incompatibility with Python 3.x. It also defines special methods that implement the default semantics of objects including `__new__`, `__init__`, `__delattr__`, `__getattribute__`, `__setattr__`, `__hash__`, `__repr__`, and `__str__`.
 
 ### Strings
 
@@ -920,7 +920,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NDg3NzcwMSw5NjkyNDE2MDcsLTI0OD
-c1NDkwMSwtMTU2MzY3Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAz
-MDc3XX0=
+eyJoaXN0b3J5IjpbMTk4NTI3NzkyOCwxNjQ0ODc3NzAxLDk2OT
+I0MTYwNywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4LDE1NzI5NjAw
+ODEsLTE3NDUwMDMwNzddfQ==
 -->
