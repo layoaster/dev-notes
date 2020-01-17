@@ -306,12 +306,19 @@ Although the trend is to prefer double quotes (`"`) over single ones (`'`), be c
   Gollum('The lint. It burns. It burns us.')
   Gollum("Always the great lint. Watching. Watching.")
 ```
-The exception this this rules are `docstrings` which should always start and end with `"""` for multi-line strings rather than `'''`. Projects may choose to use `'''` for all non-docstring multi-line strings if and only if they also use `'` for regular strings. Doc strings must use `"""` regardless. Note that it is often cleaner to use implicit line joining since multi-line strings do not flow with the indentation of the rest of the program:
+The exception this this rules are `docstrings` which should always start and end with `"""` for multi-line strings rather than `'''`. 
 
 ```python
 # Yes:
-  print ("This is much nicer.\n"
-         "Do it this way.\n")
+def dispatch_request(self):
+    """
+    Actual Flask's view function. See base class.
+
+    :return: Corresponding method handler response.
+    :raises werkzeug.exception.HTTPException: Bad request or HTTP method
+        not allowed.
+    """
+    pass
 # No:
     print """This is pretty ugly.
 Don't do this.
@@ -922,7 +929,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NTk5MzIyOCwtMzQ5ODU4Mjk4LDEzOD
+eyJoaXN0b3J5IjpbLTUwMDI2NDExOSwtMzQ5ODU4Mjk4LDEzOD
 gyNzkwMjksLTE2NzA4MTg4MDksODg3MzM5OTcyLDIxMTY2NjQ1
 MiwxNjQ0ODc3NzAxLDk2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNT
 YzNjc2OTY4LDE1NzI5NjAwODEsLTE3NDUwMDMwNzddfQ==
