@@ -496,6 +496,23 @@ import sys
 import os, sys
 ```
 
+Longer than 100 chars import statements should 
+
+```python
+# Yes:
+from django.contrib.auth.models import (
+    AbstractBaseUser, BaseUserManager, PermissionsMixin, TestingAccept
+    AbstractBaseUser,
+    BaseUserManager,
+    PermissionsMixin,
+    TestingAccept,
+ )
+
+
+# No:
+import os, sys
+```
+
 Imports are always put at the top of the file, just after any module comments and docstrings and before module globals and constants. Imports should be grouped with the order being most generic to least generic:
 
 * standard library imports
@@ -894,7 +911,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MDE1OTY5OSwtMTUxMDg2NTQ5OSwxMT
+eyJoaXN0b3J5IjpbLTQxOTQzOTk1MSwtMTUxMDg2NTQ5OSwxMT
 k5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1ODI5OCwxMzg4Mjc5
 MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0NTIsMT
 Y0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3
