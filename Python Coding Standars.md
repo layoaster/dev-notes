@@ -547,32 +547,6 @@ if __name__ == '__main__':
 
 ## Language Rules
 
-### Imports
-__Definition:__
-Reusability mechanism for sharing code from one module to another.
-
-__Pros:__
-The namespace management convention is simple. The source of each identifier is indicated in a consistent way; `x.Obj` says that object `Obj` is defined in module `x`.
-
-__Cons:__
-Module names can still collide. Some module names are inconveniently long.
-
-__Decision:__
-
-* Do not use relative names in imports. Even if the module is in the same package, use the full package name. This helps prevent unintentionally importing a package twice.
-* Use `import x` for importing packages and modules. 
-* Use `from x import y` where `x` is the package prefix and `y` is the module name with no prefix. 
-* Use `from x import y as z` if two modules named `y` are to be imported or if `y` is an inconveniently long name.
-
-For example the module sound.effects.echo may be imported as follows:
-
-```python
-from sound.effects import echo
-...
-echo.EchoFilter(input, output, delay=0.7, atten=4)
-```
-
-
 ### Exceptions
 __Definition:__
 Exceptions are a means of breaking out of the normal flow of control of a code block to handle errors or other exceptional conditions.
@@ -911,10 +885,10 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTg4Mjg4NTMsLTQxOTQzOTk1MSwtMT
-UxMDg2NTQ5OSwxMTk5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1
-ODI5OCwxMzg4Mjc5MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3Mi
-wyMTE2NjY0NTIsMTY0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1
-NDkwMSwtMTU2MzY3Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMD
-c3XX0=
+eyJoaXN0b3J5IjpbMTcxMDUyNzQ1OSwtNDE5NDM5OTUxLC0xNT
+EwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUxMjM2MywtMzQ5ODU4
+Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MDksODg3MzM5OTcyLD
+IxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0MTYwNywtMjQ4NzU0
+OTAxLC0xNTYzNjc2OTY4LDE1NzI5NjAwODEsLTE3NDUwMDMwNz
+ddfQ==
 -->
