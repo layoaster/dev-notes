@@ -7,6 +7,7 @@ We use a slightly modified version of the official [Style Guide for Python Code 
 ## Required Reading
 * [PEP8 - Python's Official Style Guide](http://www.python.org/dev/peps/pep-0008/)
 * [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html)
+* [Django Style Guide](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/)
 * [Python Best Practices](http://docs.python-guide.org/en/latest/)
 * [Python Best Practice Patterns by Vladimir Keleshev](http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes/)
 
@@ -813,10 +814,10 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIzMzM0NzIsMTcxMDUyNzQ1OSwtNDE5ND
-M5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUxMjM2
-MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MDksOD
-g3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0MTYw
-NywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4LDE1NzI5NjAwODEsLT
-E3NDUwMDMwNzddfQ==
+eyJoaXN0b3J5IjpbMTI4MzM1ODU2MSw4MjMzMzQ3MiwxNzEwNT
+I3NDU5LC00MTk0Mzk5NTEsLTE1MTA4NjU0OTksMTE5OTYxMDc3
+MCwtNzI3NTEyMzYzLC0zNDk4NTgyOTgsMTM4ODI3OTAyOSwtMT
+Y3MDgxODgwOSw4ODczMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3
+MDEsOTY5MjQxNjA3LC0yNDg3NTQ5MDEsLTE1NjM2NzY5NjgsMT
+U3Mjk2MDA4MSwtMTc0NTAwMzA3N119
 -->
