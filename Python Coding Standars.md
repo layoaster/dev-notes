@@ -14,10 +14,10 @@ We use a slightly modified version of the official [Style Guide for Python Code 
 
 ### Line Length
 
-* Maximum line length is **100 characters**.
+* Maximum line length is **100 characters** for code and **80 characters** for comments/docstrings.
 	* Exceptions:
 		* URLs in comments.
-* Do not use backslash line continuation.
+* **Do not use** backslash line continuation.
 
 Make use of Python's implicit line joining inside parentheses, brackets and braces. If necessary, you can add an extra pair of parentheses around an expression.
 
@@ -919,6 +919,6 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNzQ2MzI0NSwxNTcyOTYwMDgxLC0xNz
-Q1MDAzMDc3XX0=
+eyJoaXN0b3J5IjpbLTE1NjM2NzY5NjgsMTU3Mjk2MDA4MSwtMT
+c0NTAwMzA3N119
 -->
