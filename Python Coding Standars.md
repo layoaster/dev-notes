@@ -259,10 +259,9 @@ When string interpolation is needed use the `format` method or the Python `f-str
 ```python
 # Yes:
 x = ''.join([a, b])
-
 x = '{}, {}!'.format(imperative, expletive)
+x = f'name: {name}; score: {n}'
 
-x = 'name: {}; score: {}'.format(name, n)
 
 # No:
 x = a + b
@@ -921,7 +920,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5Mj
-QxNjA3LC0yNDg3NTQ5MDEsLTE1NjM2NzY5NjgsMTU3Mjk2MDA4
-MSwtMTc0NTAwMzA3N119
+eyJoaXN0b3J5IjpbODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0OD
+c3NzAxLDk2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4
+LDE1NzI5NjAwODEsLTE3NDUwMDMwNzddfQ==
 -->
