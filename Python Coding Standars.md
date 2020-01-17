@@ -502,7 +502,7 @@ Imports are always put at the top of the file, just after any module comments an
 * third-party imports
 * application-specific imports
 
-Within each grouping, imports should be sorted lexicographically, ignoring case, according to each module's full package path.
+Within each grouping, imports should be sorted lexicographically, ignoring case, according to each module's full package path. Also 
 
 ```python
 import foo
@@ -911,9 +911,9 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTA4NjU0OTksMTE5OTYxMDc3MCwtNz
-I3NTEyMzYzLC0zNDk4NTgyOTgsMTM4ODI3OTAyOSwtMTY3MDgx
-ODgwOSw4ODczMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOT
-Y5MjQxNjA3LC0yNDg3NTQ5MDEsLTE1NjM2NzY5NjgsMTU3Mjk2
-MDA4MSwtMTc0NTAwMzA3N119
+eyJoaXN0b3J5IjpbMjA0MDg4MTY3NiwtMTUxMDg2NTQ5OSwxMT
+k5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1ODI5OCwxMzg4Mjc5
+MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0NTIsMT
+Y0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3
+Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
 -->
