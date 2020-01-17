@@ -97,8 +97,8 @@ foo = {
 
 # 4-space hanging indent; nothing on first line
 foo = long_function_name(
-   var_one, var_two, var_three,
-   var_four)
+   var_one, var_two, var_three, var_four
+)
 
 # 4-space hanging indent in a dictionary
 foo = {
@@ -920,6 +920,6 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0ODc1NDkwMSwtMTU2MzY3Njk2OCwxNT
-cyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
+eyJoaXN0b3J5IjpbOTY5MjQxNjA3LC0yNDg3NTQ5MDEsLTE1Nj
+M2NzY5NjgsMTU3Mjk2MDA4MSwtMTc0NTAwMzA3N119
 -->
