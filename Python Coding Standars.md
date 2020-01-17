@@ -360,7 +360,7 @@ def dispatch_request(self):
 
 Be sure to use the right style for module, function, method and in-line comments: Docstrings
 
-Python has a unique commenting style using doc strings. A docstring is a string that is the first statement in a package, module, class or function. These strings can be extracted automatically through the `__doc__` member of the object and are used by pydoc. (Try running pydoc on your module to see how it looks.) We always use the three double-quote `"""` format for docstrings (per [PEP 257](http://www.python.org/dev/peps/pep-0257/)). A docstring should be organized as a summary line (one physical line) terminated by a period, question mark, or exclamation point, followed by a blank line, followed by the rest of the doc string starting at the same cursor position as the first quote of the first line. There are more formatting guidelines for doc strings below.
+Python has a unique commenting style using doc strings. A docstring is a string that is the first statement in a package, module, class or function. These strings can be extracted automatically through the `__doc__` member of the object and are used by pydoc. (Try running pydoc on your module to see how it looks.) We always use the three double-quote `"""` format for docstrings (per [PEP 257](http://www.python.org/dev/peps/pep-0257/)). A docstring should be organized as a summary line (one physical line) terminated by a period, question mark, or exclamation point, followed by a blank line, followed by the rest of the docstring starting at the same cursor position as the first quote of the first line. There are more formatting guidelines for doc strings below.
 
 #### Modules
 A Really short description of the module never hurts.
@@ -905,7 +905,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxOTAxNjIxMywtNzI3NTEyMzYzLC0zND
+eyJoaXN0b3J5IjpbMTgzOTMyODUyOSwtNzI3NTEyMzYzLC0zND
 k4NTgyOTgsMTM4ODI3OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5
 NzIsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQxNjA3LC0yND
 g3NTQ5MDEsLTE1NjM2NzY5NjgsMTU3Mjk2MDA4MSwtMTc0NTAw
