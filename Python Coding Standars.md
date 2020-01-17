@@ -364,7 +364,7 @@ Python has a unique commenting style using doc strings. A docstring is a string 
 
 There are three popular formats for docstring:
 * [Sphinx](https://www.sphinx-doc.org/en/1.7/ext/example_google.html)
-* [Google]()
+* [Google](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 * [Numpy]()
 
 
@@ -911,7 +911,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1ODE1Nzk2NywxMTk5NjEwNzcwLC03Mj
+eyJoaXN0b3J5IjpbMTAwMjg0OTIwMiwxMTk5NjEwNzcwLC03Mj
 c1MTIzNjMsLTM0OTg1ODI5OCwxMzg4Mjc5MDI5LC0xNjcwODE4
 ODA5LDg4NzMzOTk3MiwyMTE2NjY0NTIsMTY0NDg3NzcwMSw5Nj
 kyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3Njk2OCwxNTcyOTYw
