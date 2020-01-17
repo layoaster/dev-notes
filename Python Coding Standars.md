@@ -368,6 +368,7 @@ There are three popular formats for docstring:
 * [Google](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 * [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html)
 
+Google style is more readable so we choose 
 
 #### Modules
 A Really short description of the module never hurts.
@@ -814,10 +815,10 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MzM1ODU2MSw4MjMzMzQ3MiwxNzEwNT
-I3NDU5LC00MTk0Mzk5NTEsLTE1MTA4NjU0OTksMTE5OTYxMDc3
-MCwtNzI3NTEyMzYzLC0zNDk4NTgyOTgsMTM4ODI3OTAyOSwtMT
-Y3MDgxODgwOSw4ODczMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3
-MDEsOTY5MjQxNjA3LC0yNDg3NTQ5MDEsLTE1NjM2NzY5NjgsMT
-U3Mjk2MDA4MSwtMTc0NTAwMzA3N119
+eyJoaXN0b3J5IjpbMTY5ODA3MzU3MywxMjgzMzU4NTYxLDgyMz
+MzNDcyLDE3MTA1Mjc0NTksLTQxOTQzOTk1MSwtMTUxMDg2NTQ5
+OSwxMTk5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1ODI5OCwxMz
+g4Mjc5MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0
+NTIsMTY0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMT
+U2MzY3Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
 -->
