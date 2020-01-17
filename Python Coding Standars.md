@@ -260,7 +260,7 @@ The use of the operator `%` for string interpolation and the operator `+`  for c
 
 ```python
 # Yes:
-x = ''.join([a, b])
+x = ''.join((a, b))
 x = 'x: {}, y: {}!'.format(x, y)
 x = f'name: {name}; score: {n}'
 
@@ -272,10 +272,9 @@ x = '%s, %s!' % (x, y)
 x = '{}{}'.format(a, b)  # use join in this case
 x = x + ', ' + y + '!'
 x = 'name: %s; score: %d' % (name, n)
-x = 'name: ' + name + '; score: ' + str(n)
 ```
 
-Aa, avoid using the `+` and `+=` operators to accumulate a string within a loop. Since strings are immutable, this creates unnecessary temporary objects and results in quadratic rather than linear running time. Instead, add each substring to a list and `''.join` the list after the loop terminates (or, write each substring to a `io.BytesIO buffer`).
+Accordingly, avoid using the `+` and `+=` operators to accumulate a string within a loop. Since strings are immutable, this creates unnecessary temporary objects and results in quadratic rather than linear running time. Instead, add each substring to a list and `''.join` the list after the loop terminates (or, write each substring to a `io.BytesIO buffer`).
 
 ```python
 #Yes:
@@ -922,7 +921,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1ODQ2NzY5NiwtMTY3MDgxODgwOSw4OD
+eyJoaXN0b3J5IjpbMTM4ODI3OTAyOSwtMTY3MDgxODgwOSw4OD
 czMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQxNjA3
 LC0yNDg3NTQ5MDEsLTE1NjM2NzY5NjgsMTU3Mjk2MDA4MSwtMT
 c0NTAwMzA3N119
