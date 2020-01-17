@@ -358,10 +358,9 @@ def dispatch_request(self):
 
 ### Comments
 
-Be sure to use the right style for module, function, method and in-line comments.
-Doc Strings
+Be sure to use the right style for module, function, method and in-line comments: Docstrings
 
-Python has a unique commenting style using doc strings. A doc string is a string that is the first statement in a package, module, class or function. These strings can be extracted automatically through the `__doc__` member of the object and are used by pydoc. (Try running pydoc on your module to see how it looks.) We always use the three double-quote `"""` format for doc strings (per [PEP 257](http://www.python.org/dev/peps/pep-0257/)). A doc string should be organized as a summary line (one physical line) terminated by a period, question mark, or exclamation point, followed by a blank line, followed by the rest of the doc string starting at the same cursor position as the first quote of the first line. There are more formatting guidelines for doc strings below.
+Python has a unique commenting style using doc strings. A docstring is a string that is the first statement in a package, module, class or function. These strings can be extracted automatically through the `__doc__` member of the object and are used by pydoc. (Try running pydoc on your module to see how it looks.) We always use the three double-quote `"""` format for doc strings (per [PEP 257](http://www.python.org/dev/peps/pep-0257/)). A doc string should be organized as a summary line (one physical line) terminated by a period, question mark, or exclamation point, followed by a blank line, followed by the rest of the doc string starting at the same cursor position as the first quote of the first line. There are more formatting guidelines for doc strings below.
 
 #### Modules
 Every file should contain license boilerplate. Choose the appropriate boilerplate for the license used by the project (for example, Apache 2.0, BSD, LGPL, GPL)
@@ -907,8 +906,8 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDE3MTI2MDAsLTM0OTg1ODI5OCwxMz
-g4Mjc5MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0
-NTIsMTY0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMT
-U2MzY3Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
+eyJoaXN0b3J5IjpbMjcxMTMxNjEyLC0zNDk4NTgyOTgsMTM4OD
+I3OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5NzIsMjExNjY2NDUy
+LDE2NDQ4Nzc3MDEsOTY5MjQxNjA3LC0yNDg3NTQ5MDEsLTE1Nj
+M2NzY5NjgsMTU3Mjk2MDA4MSwtMTc0NTAwMzA3N119
 -->
