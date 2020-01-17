@@ -5,11 +5,10 @@
 We use a slightly modified version of the official [Style Guide for Python Code (PEP 8)](http://www.python.org/dev/peps/pep-0008/) and [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html) as a basis for our coding standards. This article describes our modifications and additions and also contains a summary of the coding standards. Reading the official style guide is highly recommended before moving on, as this article merely complements it.
 
 ## Required Reading
+* [PEP8 - Python's Official Style Guide](http://www.python.org/dev/peps/pep-0008/)
+* [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html)
 * [Python Best Practices](http://docs.python-guide.org/en/latest/)
 * [Python Best Practice Patterns by Vladimir Keleshev](http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes/)
-* [Style Guide for Python code](http://www.python.org/dev/peps/pep-0008/)
-* [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html)
-* [Guide to Python's Magic Methods](http://www.rafekettler.com/magicmethods.html)
 
 ## Quick Reference
 Already read the entire document and want to quickly check a style rule? Take a look at [this](https://github.com/trein/dev-best-practices/blob/master/sample_code.py) sample code which provides a simple summary of the main formatting rules.
@@ -924,5 +923,5 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDUwMDMwNzddfQ==
+eyJoaXN0b3J5IjpbMTU3Mjk2MDA4MSwtMTc0NTAwMzA3N119
 -->
