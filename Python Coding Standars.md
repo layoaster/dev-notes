@@ -507,15 +507,12 @@ from django.contrib.auth.models import (
     TestingAccept,
  )
 
-
 # No:
 from django.contrib.auth.models import (
    AbstractBaseUser, BaseUserManager, PermissionsMixin,TestingAccept
 )
 from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager, 
- PermissionsMixin,TestingAccept
-)
-
+                                        PermissionsMixin,TestingAccept)
 ```
 
 Imports are always put at the top of the file, just after any module comments and docstrings and before module globals and constants. Imports should be grouped with the order being most generic to least generic:
@@ -528,12 +525,10 @@ Within each grouping:
 * `import` statemens should go before `from X import ...` statements.
 * Imports should be sorted lexicographically, ignoring case, according to each module's full package path. 
 
-
 ```python
 import foo
 from foo import bar
 from foo.bar import baz, Quux
-from foo.bar import 
 from Foob import ar
 ```
 
@@ -916,10 +911,10 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMDUwMTM1LC00MTk0Mzk5NTEsLTE1MT
-A4NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4NTgy
-OTgsMTM4ODI3OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5NzIsMj
-ExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQxNjA3LC0yNDg3NTQ5
-MDEsLTE1NjM2NzY5NjgsMTU3Mjk2MDA4MSwtMTc0NTAwMzA3N1
-19
+eyJoaXN0b3J5IjpbLTExNTg4Mjg4NTMsLTQxOTQzOTk1MSwtMT
+UxMDg2NTQ5OSwxMTk5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1
+ODI5OCwxMzg4Mjc5MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3Mi
+wyMTE2NjY0NTIsMTY0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1
+NDkwMSwtMTU2MzY3Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMD
+c3XX0=
 -->
