@@ -23,8 +23,9 @@ Make use of Python's implicit line joining inside parentheses, brackets and brac
 
 ```python
 # Yes:
-foo_bar(self, width, height, color='black', design=None, x='foo',
-    emphasis=None, highlight=0)
+def foo_bar(
+    self, width, height, color='black', design=None, x='foo', emphasis=None, highlight=0
+):
 
     if (width == 0 and height == 0 and
         color == 'red' and emphasis == 'strong'):
@@ -919,6 +920,6 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjM2NzY5NjgsMTU3Mjk2MDA4MSwtMT
-c0NTAwMzA3N119
+eyJoaXN0b3J5IjpbLTI0ODc1NDkwMSwtMTU2MzY3Njk2OCwxNT
+cyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
 -->
