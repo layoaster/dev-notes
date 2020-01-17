@@ -503,8 +503,9 @@ Imports are always put at the top of the file, just after any module comments an
 * application-specific imports
 
 Within each grouping:
-* `import` statemens should go before `from` statements.
+* `import` statemens should go before `from XZ` statements.
 * Imports should be sorted lexicographically, ignoring case, according to each module's full package path. 
+* 
 
 ```python
 import foo
@@ -893,9 +894,9 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTE2MDM0MzQsLTE1MTA4NjU0OTksMT
-E5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4NTgyOTgsMTM4ODI3
-OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5NzIsMjExNjY2NDUyLD
-E2NDQ4Nzc3MDEsOTY5MjQxNjA3LC0yNDg3NTQ5MDEsLTE1NjM2
-NzY5NjgsMTU3Mjk2MDA4MSwtMTc0NTAwMzA3N119
+eyJoaXN0b3J5IjpbLTYzNzA5MjQxMiwtMTUxMDg2NTQ5OSwxMT
+k5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1ODI5OCwxMzg4Mjc5
+MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0NTIsMT
+Y0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3
+Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
 -->
