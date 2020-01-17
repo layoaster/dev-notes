@@ -507,29 +507,9 @@ Within each grouping, imports should be sorted lexicographically, ignoring case,
 ```python
 import foo
 from foo import bar
-from foo.bar import baz
-from foo.bar import Quux
+from foo.bar import baz, Quux
+from foo.bar import 
 from Foob import ar
-```
-
-### Statements
-
-Generally only one statement per line. However, you may put the result of a test on the same line as the test only if the entire statement fits on one line. In particular, you can never do so with try/except since the try and except can't both fit on the same line, and you can only do so with an if if there is no else.
-
-```python
-# Yes:
-  if foo: bar(foo)
-
-# No:
-  if foo: bar(foo)
-  else:   baz(foo)
-
-  try:               bar(foo)
-  except ValueError: baz(foo)
-
-  try:
-      bar(foo)
-  except ValueError: baz(foo)
 ```
 
 ### Main
@@ -911,7 +891,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MDg4MTY3NiwtMTUxMDg2NTQ5OSwxMT
+eyJoaXN0b3J5IjpbMTU4NzM2NjM1NiwtMTUxMDg2NTQ5OSwxMT
 k5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1ODI5OCwxMzg4Mjc5
 MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0NTIsMT
 Y0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3
