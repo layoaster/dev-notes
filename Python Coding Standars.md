@@ -496,12 +496,11 @@ import sys
 import os, sys
 ```
 
-Longer than 100 chars import statements should 
+Longer than 100 chars import statements should be broken up into lines with trailing commas
 
 ```python
 # Yes:
 from django.contrib.auth.models import (
-    AbstractBaseUser, BaseUserManager, PermissionsMixin, TestingAccept
     AbstractBaseUser,
     BaseUserManager,
     PermissionsMixin,
@@ -510,7 +509,13 @@ from django.contrib.auth.models import (
 
 
 # No:
-import os, sys
+from django.contrib.auth.models import (
+   AbstractBaseUser, BaseUserManager, PermissionsMixin,TestingAccept
+)
+from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager, 
+ PermissionsMixin,TestingAccept
+)
+
 ```
 
 Imports are always put at the top of the file, just after any module comments and docstrings and before module globals and constants. Imports should be grouped with the order being most generic to least generic:
@@ -911,9 +916,10 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxOTQzOTk1MSwtMTUxMDg2NTQ5OSwxMT
-k5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1ODI5OCwxMzg4Mjc5
-MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0NTIsMT
-Y0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3
-Njk2OCwxNTcyOTYwMDgxLC0xNzQ1MDAzMDc3XX0=
+eyJoaXN0b3J5IjpbLTUzMDUwMTM1LC00MTk0Mzk5NTEsLTE1MT
+A4NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4NTgy
+OTgsMTM4ODI3OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5NzIsMj
+ExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQxNjA3LC0yNDg3NTQ5
+MDEsLTE1NjM2NzY5NjgsMTU3Mjk2MDA4MSwtMTc0NTAwMzA3N1
+19
 -->
