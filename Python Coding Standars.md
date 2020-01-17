@@ -254,7 +254,7 @@ class OuterClass(object):
 
 ### Strings
 
-Use the format method or the `%` operator for formatting strings, even when the parameters are all strings. Use your best judgement to decide between `+` and `%` (or format) though.
+When string interpolation is needed use the `format` method or the Python `f-string` for formatting strings, even when the parameters are all strings.
 
 ```python
 # Yes:
@@ -918,7 +918,7 @@ Avoid external dependencies in the decorator itself (e.g. don't rely on files, s
 
 Decorators are a special case of "top level code" - see main for more discussion.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODMzNTgzNTEsMTY0NDg3NzcwMSw5Nj
-kyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3Njk2OCwxNTcyOTYw
-MDgxLC0xNzQ1MDAzMDc3XX0=
+eyJoaXN0b3J5IjpbLTczNjYyMDEwNywxNjQ0ODc3NzAxLDk2OT
+I0MTYwNywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4LDE1NzI5NjAw
+ODEsLTE3NDUwMDMwNzddfQ==
 -->
