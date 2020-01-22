@@ -451,17 +451,9 @@ def fetch_bigtable_rows(big_table, keys, other_silly_variable=None):
     :type other_silly_variable: str
 
     :return: A dict mapping keys to the corresponding table row data
-        fetched. Each row is represented as a tuple of strings. For
-        example:
-
-        {'Serak': ('Rigel VII', 'Preparer'),
-         'Zim': ('Irk', 'Invader'),
-         'Lrrr': ('Omicron Persei 8', 'Emperor')}
-
-        If a key from the keys argument is missing from the dictionary,
-        then that row was not found in the table.
-
-    Raises:
+        fetched. Each row is represented as a tuple of strings.
+    :rtype: dict
+    raises:
         IOError: An error occurred accessing the bigtable.Table object.
     """
     pass
@@ -853,11 +845,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NDM5MjY0OCw1NDQxODYxOTQsMTQxMz
-IwNDY2NywxMzY0MDkyMzQ2LC05NTk0OTQxMzIsLTIwNDUyNTY4
-MDYsMTI4MzM1ODU2MSw4MjMzMzQ3MiwxNzEwNTI3NDU5LC00MT
-k0Mzk5NTEsLTE1MTA4NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEy
-MzYzLC0zNDk4NTgyOTgsMTM4ODI3OTAyOSwtMTY3MDgxODgwOS
-w4ODczMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQx
-NjA3XX0=
+eyJoaXN0b3J5IjpbMjY0MTgxNTYwLDU0NDE4NjE5NCwxNDEzMj
+A0NjY3LDEzNjQwOTIzNDYsLTk1OTQ5NDEzMiwtMjA0NTI1Njgw
+NiwxMjgzMzU4NTYxLDgyMzMzNDcyLDE3MTA1Mjc0NTksLTQxOT
+QzOTk1MSwtMTUxMDg2NTQ5OSwxMTk5NjEwNzcwLC03Mjc1MTIz
+NjMsLTM0OTg1ODI5OCwxMzg4Mjc5MDI5LC0xNjcwODE4ODA5LD
+g4NzMzOTk3MiwyMTE2NjY0NTIsMTY0NDg3NzcwMSw5NjkyNDE2
+MDddfQ==
 -->
