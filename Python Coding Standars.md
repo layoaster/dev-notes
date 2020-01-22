@@ -442,8 +442,10 @@ def fetch_bigtable_rows(big_table, keys, other_silly_variable=None):
     other_silly_variable is not None.
 
     :param big_table: An open Bigtable Table instance.
+    :type big_table: :class:`bg.BigTable`
     :param keys: A sequence of strings representing the key of each table row
         to fetch.
+    :type keys: list
     :param other_silly_variable: Another optional variable, that has a much
             longer name than the other args, and which does nothing.
 
@@ -851,7 +853,7 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTQ4MDI0MDEsNTQ0MTg2MTk0LDE0MT
+eyJoaXN0b3J5IjpbLTE0NTAzMTc5MzcsNTQ0MTg2MTk0LDE0MT
 MyMDQ2NjcsMTM2NDA5MjM0NiwtOTU5NDk0MTMyLC0yMDQ1MjU2
 ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1OSwtND
 E5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUx
