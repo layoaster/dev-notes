@@ -447,10 +447,10 @@ def fetch_bigtable_rows(big_table, keys, other_silly_variable=None):
         to fetch.
     :type keys: list
     :param other_silly_variable: Another optional variable, that has a much
-            longer name than the other args, and which does nothing.
+        longer name than the other args, and which does nothing.
+    :type other_silly_variable: str
 
-    Returns:
-        A dict mapping keys to the corresponding table row data
+    :return: A dict mapping keys to the corresponding table row data
         fetched. Each row is represented as a tuple of strings. For
         example:
 
@@ -853,11 +853,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTAzMTc5MzcsNTQ0MTg2MTk0LDE0MT
-MyMDQ2NjcsMTM2NDA5MjM0NiwtOTU5NDk0MTMyLC0yMDQ1MjU2
-ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1OSwtND
-E5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUx
-MjM2MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MD
-ksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0
-MTYwN119
+eyJoaXN0b3J5IjpbMTI4NDM5MjY0OCw1NDQxODYxOTQsMTQxMz
+IwNDY2NywxMzY0MDkyMzQ2LC05NTk0OTQxMzIsLTIwNDUyNTY4
+MDYsMTI4MzM1ODU2MSw4MjMzMzQ3MiwxNzEwNTI3NDU5LC00MT
+k0Mzk5NTEsLTE1MTA4NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEy
+MzYzLC0zNDk4NTgyOTgsMTM4ODI3OTAyOSwtMTY3MDgxODgwOS
+w4ODczMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQx
+NjA3XX0=
 -->
