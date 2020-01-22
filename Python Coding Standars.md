@@ -407,12 +407,12 @@ Certain aspects of a function should be documented in special sections. A generi
 """
 ```
 
-* `param:`
+* `:param`
 	* List each parameter by name. A description should follow the name, and be separated by a colon and a space. If the description is too long to fit on a single 80-character line, use a hanging indent of 4 spaces (be consistent with the rest of the file).
 	* The description should mention the meaning of the argument.
 	* If a function accepts *foo (variable length argument lists) and/or **bar (arbitrary keyword arguments), they should be listed as *foo and **bar.
 
-* `type:` 
+* `:type` 
 	* Indicates the type of the previous `:param` section describe.
 	* When `ParamType` is not a native Python type but a function or a class you can use the following notation:
 ```python
@@ -422,7 +422,8 @@ Certain aspects of a function should be documented in special sections. A generi
 # A function/callable as ParamType
 :type param_2: :func:`my_function`
 ```
-
+* `:raises`
+	* To list exceptions that are explicitely raised within the function. 
 
 * __Returns: (or Yields: for generators)__
 	* Describe the type and semantics of the return value. If the function only returns None, this section is not required.
@@ -849,11 +850,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MjcxODQyMiwxNDEzMjA0NjY3LDEzNj
-QwOTIzNDYsLTk1OTQ5NDEzMiwtMjA0NTI1NjgwNiwxMjgzMzU4
-NTYxLDgyMzMzNDcyLDE3MTA1Mjc0NTksLTQxOTQzOTk1MSwtMT
-UxMDg2NTQ5OSwxMTk5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1
-ODI5OCwxMzg4Mjc5MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3Mi
-wyMTE2NjY0NTIsMTY0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1
-NDkwMV19
+eyJoaXN0b3J5IjpbLTE4MzU0MjE2NzMsMTQxMzIwNDY2NywxMz
+Y0MDkyMzQ2LC05NTk0OTQxMzIsLTIwNDUyNTY4MDYsMTI4MzM1
+ODU2MSw4MjMzMzQ3MiwxNzEwNTI3NDU5LC00MTk0Mzk5NTEsLT
+E1MTA4NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4
+NTgyOTgsMTM4ODI3OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5Nz
+IsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQxNjA3LC0yNDg3
+NTQ5MDFdfQ==
 -->
