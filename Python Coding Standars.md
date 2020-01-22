@@ -425,7 +425,10 @@ Certain aspects of a function should be documented in special sections. A generi
 * `:raises`
 	* To list exceptions that are explicitely raised within the function. 
 	* Explain the condiction(s) which raise the exception .
-* 
+* `:return`
+	* Describe what the function does.
+* `:rtype` 
+	* Type of the value returned by  the function.
 
 * __Returns: (or Yields: for generators)__
 	* Describe the type and semantics of the return value. If the function only returns None, this section is not required.
@@ -852,11 +855,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ0MTg2MTk0LDE0MTMyMDQ2NjcsMTM2ND
-A5MjM0NiwtOTU5NDk0MTMyLC0yMDQ1MjU2ODA2LDEyODMzNTg1
-NjEsODIzMzM0NzIsMTcxMDUyNzQ1OSwtNDE5NDM5OTUxLC0xNT
-EwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUxMjM2MywtMzQ5ODU4
-Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MDksODg3MzM5OTcyLD
-IxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0MTYwNywtMjQ4NzU0
-OTAxXX0=
+eyJoaXN0b3J5IjpbLTEwMTE4MjU0NzEsNTQ0MTg2MTk0LDE0MT
+MyMDQ2NjcsMTM2NDA5MjM0NiwtOTU5NDk0MTMyLC0yMDQ1MjU2
+ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1OSwtND
+E5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUx
+MjM2MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MD
+ksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0
+MTYwN119
 -->
