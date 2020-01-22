@@ -407,13 +407,15 @@ Certain aspects of a function should be documented in special sections. A generi
 """
 ```
 
+**Note**: that the `...` notation has been used above to indicate repetition and should not be used when generating actual docstrings, as can be seen by the example presented below.
+
 * `:param`
 	* List each parameter by name. A description should follow the name, and be separated by a colon and a space. If the description is too long to fit on a single 80-character line, use a hanging indent of 4 spaces (be consistent with the rest of the file).
 	* The description should mention the meaning of the argument.
 	* If a function accepts *foo (variable length argument lists) and/or **bar (arbitrary keyword arguments), they should be listed as *foo and **bar.
 
 * `:type` 
-	* Indicates the type of the previous `:param` section describe.
+	* Indicates the type of the parameter that a previous `:param` section describe.
 	* When `ParamType` is not a native Python type but a function or a class you can use the following notation:
 ```python
 # A class as ParamType
@@ -430,11 +432,7 @@ Certain aspects of a function should be documented in special sections. A generi
 * `:rtype` 
 	* Type of the value returned by  the function.
 
-* __Returns: (or Yields: for generators)__
-	* Describe the type and semantics of the return value. If the function only returns None, this section is not required.
 
-* __Raises:__
-	* List all exceptions that are relevant to the interface.
 
 ```python
 def fetch_bigtable_rows(big_table, keys, other_silly_variable=None):
@@ -855,11 +853,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTE4MjU0NzEsNTQ0MTg2MTk0LDE0MT
-MyMDQ2NjcsMTM2NDA5MjM0NiwtOTU5NDk0MTMyLC0yMDQ1MjU2
-ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1OSwtND
-E5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUx
-MjM2MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MD
-ksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0
-MTYwN119
+eyJoaXN0b3J5IjpbNTYxMzQyMTgzLDU0NDE4NjE5NCwxNDEzMj
+A0NjY3LDEzNjQwOTIzNDYsLTk1OTQ5NDEzMiwtMjA0NTI1Njgw
+NiwxMjgzMzU4NTYxLDgyMzMzNDcyLDE3MTA1Mjc0NTksLTQxOT
+QzOTk1MSwtMTUxMDg2NTQ5OSwxMTk5NjEwNzcwLC03Mjc1MTIz
+NjMsLTM0OTg1ODI5OCwxMzg4Mjc5MDI5LC0xNjcwODE4ODA5LD
+g4NzMzOTk3MiwyMTE2NjY0NTIsMTY0NDg3NzcwMSw5NjkyNDE2
+MDddfQ==
 -->
