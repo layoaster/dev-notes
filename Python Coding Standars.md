@@ -391,7 +391,21 @@ A function must have a docstring, unless it meets all of the following criteria:
 
 A docstring should give enough information to write a call to the function without reading the function's code. A docstring should describe the function's calling syntax and its semantics, not its implementation. For tricky code, comments alongside the code are more appropriate than using docstrings.
 
-Certain aspects of a function should be documented in special sections, a general 
+Certain aspects of a function should be documented in special sections. A generic Sphinx docstring:
+
+```python
+"""
+[Summary]
+
+:param [ParamName]: [ParamDescription], defaults to [DefaultParamVal]
+:type [ParamName]: [ParamType](, optional)
+
+:raises [ErrorType]: [ErrorDescription]
+...
+:return: [ReturnDescription]
+:rtype: [ReturnType]
+"""
+```
 
 * `param:`
 	* List each parameter by name. A description should follow the name, and be separated by a colon and a space. If the description is too long to fit on a single 80-character line, use a hanging indent of 4 spaces (be consistent with the rest of the file).
@@ -823,11 +837,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY5MDcyMzI3LDEzNjQwOTIzNDYsLTk1OT
-Q5NDEzMiwtMjA0NTI1NjgwNiwxMjgzMzU4NTYxLDgyMzMzNDcy
-LDE3MTA1Mjc0NTksLTQxOTQzOTk1MSwtMTUxMDg2NTQ5OSwxMT
-k5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1ODI5OCwxMzg4Mjc5
-MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0NTIsMT
-Y0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3
-Njk2OF19
+eyJoaXN0b3J5IjpbMTUxNTU1MzUyNCwxMzY0MDkyMzQ2LC05NT
+k0OTQxMzIsLTIwNDUyNTY4MDYsMTI4MzM1ODU2MSw4MjMzMzQ3
+MiwxNzEwNTI3NDU5LC00MTk0Mzk5NTEsLTE1MTA4NjU0OTksMT
+E5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4NTgyOTgsMTM4ODI3
+OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5NzIsMjExNjY2NDUyLD
+E2NDQ4Nzc3MDEsOTY5MjQxNjA3LC0yNDg3NTQ5MDEsLTE1NjM2
+NzY5NjhdfQ==
 -->
