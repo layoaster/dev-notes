@@ -394,8 +394,9 @@ A docstring should give enough information to write a call to the function witho
 Certain aspects of a function should be documented in special sections. A generic Sphinx docstring:
 
 ```python
-"""
-[Summary]
+"""[Summary]
+
+[Description]
 
 :param [ParamName]: [ParamDescription], defaults to [DefaultParamVal]
 :type [ParamName]: [ParamType](, optional)
@@ -406,7 +407,6 @@ Certain aspects of a function should be documented in special sections. A generi
 :rtype: [ReturnType]
 """
 ```
-
 **Note**: that the `...` notation has been used above to indicate repetition and should not be used when generating actual docstrings, as can be seen by the example presented below.
 
 * `:param`
@@ -434,7 +434,8 @@ Certain aspects of a function should be documented in special sections. A generi
 
 ```python
 def fetch_bigtable_rows(big_table, keys, other_silly_variable=None):
-    """Fetches rows from a Bigtable.
+    """
+    Fetches rows from a Bigtable.
 
     Retrieves rows pertaining to the given keys from the Table instance
     represented by big_table.  Silly things may happen if
@@ -851,7 +852,7 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNTE0MjQ2MSw1NDQxODYxOTQsMTQxMz
+eyJoaXN0b3J5IjpbLTIyOTI4Nzc0NSw1NDQxODYxOTQsMTQxMz
 IwNDY2NywxMzY0MDkyMzQ2LC05NTk0OTQxMzIsLTIwNDUyNTY4
 MDYsMTI4MzM1ODU2MSw4MjMzMzQ3MiwxNzEwNTI3NDU5LC00MT
 k0Mzk5NTEsLTE1MTA4NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEy
