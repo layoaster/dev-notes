@@ -414,7 +414,7 @@ Certain aspects of a function should be documented in special sections. A generi
 
 * `type:` 
 	* Indicates the type of the previous `:param` section describe.
-	* unless 
+	* When `ParamType` is not a native Python type but a function 
 
 * __Returns: (or Yields: for generators)__
 	* Describe the type and semantics of the return value. If the function only returns None, this section is not required.
@@ -841,11 +841,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMzIwNDY2NywxMzY0MDkyMzQ2LC05NT
-k0OTQxMzIsLTIwNDUyNTY4MDYsMTI4MzM1ODU2MSw4MjMzMzQ3
-MiwxNzEwNTI3NDU5LC00MTk0Mzk5NTEsLTE1MTA4NjU0OTksMT
-E5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4NTgyOTgsMTM4ODI3
-OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5NzIsMjExNjY2NDUyLD
-E2NDQ4Nzc3MDEsOTY5MjQxNjA3LC0yNDg3NTQ5MDEsLTE1NjM2
-NzY5NjhdfQ==
+eyJoaXN0b3J5IjpbLTIxMTUzNjgxMjcsMTQxMzIwNDY2NywxMz
+Y0MDkyMzQ2LC05NTk0OTQxMzIsLTIwNDUyNTY4MDYsMTI4MzM1
+ODU2MSw4MjMzMzQ3MiwxNzEwNTI3NDU5LC00MTk0Mzk5NTEsLT
+E1MTA4NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4
+NTgyOTgsMTM4ODI3OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5Nz
+IsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQxNjA3LC0yNDg3
+NTQ5MDFdfQ==
 -->
