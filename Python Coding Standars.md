@@ -482,17 +482,17 @@ class SimpleBleDevice(Peripheral):
         type code, human-readable description and value for all available 
         advertising data items, defaults to None
     :type data: list, optional
-    :param rssi: Received Signal Strength Indication for the last received broadcast from the device. This is an integer value measured in dB, where 0 dB is the maximum (theoretical) signal strength, and more negative numbers indicate a weaker signal, defaults to 0
+    :param rssi: Received Signal Strength Indication for the last received 
+        broadcast from the device. This is an integer value measured in dB, where 
+        0 dB is the maximum (theoretical) signal strength, and more negative 
+        numbers indicate a weaker signal, defaults to 0
  :type rssi: int, optional
- :param connectable: `True` if the device supports connections, and `False` otherwise (typically used for advertising ‘beacons’)., defaults to `False`
- :type connectable: bool, optional
- :param updateCount: Integer count of the number of advertising packets received from the device so far, defaults to 0
- :type updateCount: int, optional
+
  """
 
     def __init__(self, client, addr=None, addrType=ADDR_TYPE_PUBLIC, iface=0, data=None, rssi=0, connectable=False, updateCount=0):
-        """Constructor method
- """
+        """Constructor method.
+        """
         super().__init__(deviceAddr=None, addrType=addrType, iface=iface)
         self.addr = addr
         self.addrType = addrType
@@ -869,11 +869,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjIzNzk5NzQsNTQ0MTg2MTk0LDE0MT
-MyMDQ2NjcsMTM2NDA5MjM0NiwtOTU5NDk0MTMyLC0yMDQ1MjU2
-ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1OSwtND
-E5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUx
-MjM2MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MD
-ksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0
-MTYwN119
+eyJoaXN0b3J5IjpbMzk3MzEzNjQ4LDU0NDE4NjE5NCwxNDEzMj
+A0NjY3LDEzNjQwOTIzNDYsLTk1OTQ5NDEzMiwtMjA0NTI1Njgw
+NiwxMjgzMzU4NTYxLDgyMzMzNDcyLDE3MTA1Mjc0NTksLTQxOT
+QzOTk1MSwtMTUxMDg2NTQ5OSwxMTk5NjEwNzcwLC03Mjc1MTIz
+NjMsLTM0OTg1ODI5OCwxMzg4Mjc5MDI5LC0xNjcwODE4ODA5LD
+g4NzMzOTk3MiwyMTE2NjY0NTIsMTY0NDg3NzcwMSw5NjkyNDE2
+MDddfQ==
 -->
