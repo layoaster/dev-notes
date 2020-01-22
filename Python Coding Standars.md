@@ -434,8 +434,7 @@ Certain aspects of a function should be documented in special sections. A generi
 
 ```python
 def fetch_bigtable_rows(big_table, keys, other_silly_variable=None):
-    """
-    Fetches rows from a Bigtable.
+    """Fetches rows from a Bigtable.
 
     Retrieves rows pertaining to the given keys from the Table instance
     represented by big_table.  Silly things may happen if
@@ -463,7 +462,10 @@ Classes should have a doc string below the class definition describing the class
 
 ```python
 class SimpleBleDevice(Peripheral):
-    """This is a conceptual class representation of a simple BLE device (GATT Server). It is essentially an extended combination of the :class:`bluepy.btle.Peripheral` and :class:`bluepy.btle.ScanEntry` classes
+    """Conceptual class representation of a simple BLE device (GATT Server).
+       
+       It is essentially an extended combination of the 
+       :class:`bluepy.btle.Peripheral` and :class:`bluepy.btle.ScanEntry` classes
 
  :param client: A handle to the :class:`simpleble.SimpleBleClient` client object that detected the device
  :type client: class:`simpleble.SimpleBleClient`
@@ -862,11 +864,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY1MzcxNDgzLDU0NDE4NjE5NCwxNDEzMj
-A0NjY3LDEzNjQwOTIzNDYsLTk1OTQ5NDEzMiwtMjA0NTI1Njgw
-NiwxMjgzMzU4NTYxLDgyMzMzNDcyLDE3MTA1Mjc0NTksLTQxOT
-QzOTk1MSwtMTUxMDg2NTQ5OSwxMTk5NjEwNzcwLC03Mjc1MTIz
-NjMsLTM0OTg1ODI5OCwxMzg4Mjc5MDI5LC0xNjcwODE4ODA5LD
-g4NzMzOTk3MiwyMTE2NjY0NTIsMTY0NDg3NzcwMSw5NjkyNDE2
-MDddfQ==
+eyJoaXN0b3J5IjpbMTA1ODY5MjU5Miw1NDQxODYxOTQsMTQxMz
+IwNDY2NywxMzY0MDkyMzQ2LC05NTk0OTQxMzIsLTIwNDUyNTY4
+MDYsMTI4MzM1ODU2MSw4MjMzMzQ3MiwxNzEwNTI3NDU5LC00MT
+k0Mzk5NTEsLTE1MTA4NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEy
+MzYzLC0zNDk4NTgyOTgsMTM4ODI3OTAyOSwtMTY3MDgxODgwOS
+w4ODczMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQx
+NjA3XX0=
 -->
