@@ -447,7 +447,7 @@ def fetch_bigtable_rows(big_table, keys, other_silly_variable=None):
     :type keys: list
     :param other_silly_variable: Another optional variable, that has a much
         longer name than the other args, and which does nothing.
-    :type other_silly_variable: str
+    :type other_silly_variable: str, optional
 
     :return: A dict mapping keys to the corresponding table row data
         fetched. Each row is represented as a tuple of strings.
@@ -869,7 +869,7 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjM5MTc1MzAsNTQ0MTg2MTk0LDE0MT
+eyJoaXN0b3J5IjpbLTE3NjIzNzk5NzQsNTQ0MTg2MTk0LDE0MT
 MyMDQ2NjcsMTM2NDA5MjM0NiwtOTU5NDk0MTMyLC0yMDQ1MjU2
 ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1OSwtND
 E5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUx
