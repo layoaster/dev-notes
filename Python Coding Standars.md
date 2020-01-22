@@ -441,11 +441,10 @@ def fetch_bigtable_rows(big_table, keys, other_silly_variable=None):
     represented by big_table.  Silly things may happen if
     other_silly_variable is not None.
 
-    Args:
-        big_table: An open Bigtable Table instance.
-        keys: A sequence of strings representing the key of each table row
-            to fetch.
-        other_silly_variable: Another optional variable, that has a much
+    :param big_table: An open Bigtable Table instance.
+    :param keys: A sequence of strings representing the key of each table row
+        to fetch.
+    :param other_silly_variable: Another optional variable, that has a much
             longer name than the other args, and which does nothing.
 
     Returns:
@@ -852,11 +851,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyOTI4Nzc0NSw1NDQxODYxOTQsMTQxMz
-IwNDY2NywxMzY0MDkyMzQ2LC05NTk0OTQxMzIsLTIwNDUyNTY4
-MDYsMTI4MzM1ODU2MSw4MjMzMzQ3MiwxNzEwNTI3NDU5LC00MT
-k0Mzk5NTEsLTE1MTA4NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEy
-MzYzLC0zNDk4NTgyOTgsMTM4ODI3OTAyOSwtMTY3MDgxODgwOS
-w4ODczMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQx
-NjA3XX0=
+eyJoaXN0b3J5IjpbLTEwOTQ4MDI0MDEsNTQ0MTg2MTk0LDE0MT
+MyMDQ2NjcsMTM2NDA5MjM0NiwtOTU5NDk0MTMyLC0yMDQ1MjU2
+ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1OSwtND
+E5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUx
+MjM2MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MD
+ksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0
+MTYwN119
 -->
