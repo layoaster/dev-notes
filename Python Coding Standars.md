@@ -416,9 +416,13 @@ Certain aspects of a function should be documented in special sections. A generi
 	* Indicates the type of the previous `:param` section describe.
 	* When `ParamType` is not a native Python type but a function or a class you can use the following notation:
 ```python
-# A class as p
-:type param_1: :class:``(, optional)
+# A class as ParamType
+:type param_1: :class:`MyClass`
+
+# A function/callable as ParamType
+:type param_2: :func:`my_function`
 ```
+
 
 * __Returns: (or Yields: for generators)__
 	* Describe the type and semantics of the return value. If the function only returns None, this section is not required.
@@ -845,7 +849,7 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MTMzMjkwNywxNDEzMjA0NjY3LDEzNj
+eyJoaXN0b3J5IjpbLTI3MjcxODQyMiwxNDEzMjA0NjY3LDEzNj
 QwOTIzNDYsLTk1OTQ5NDEzMiwtMjA0NTI1NjgwNiwxMjgzMzU4
 NTYxLDgyMzMzNDcyLDE3MTA1Mjc0NTksLTQxOTQzOTk1MSwtMT
 UxMDg2NTQ5OSwxMTk5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1
