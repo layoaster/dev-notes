@@ -413,6 +413,8 @@ Certain aspects of a function should be documented in special sections. A generi
 	* If a function accepts *foo (variable length argument lists) and/or **bar (arbitrary keyword arguments), they should be listed as *foo and **bar.
 
 * `type:` 
+	* Indicates the type of the previous `:param` section describe.
+	* unless 
 
 * __Returns: (or Yields: for generators)__
 	* Describe the type and semantics of the return value. If the function only returns None, this section is not required.
@@ -839,7 +841,7 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3OTUyODQ5NCwxMzY0MDkyMzQ2LC05NT
+eyJoaXN0b3J5IjpbMTQxMzIwNDY2NywxMzY0MDkyMzQ2LC05NT
 k0OTQxMzIsLTIwNDUyNTY4MDYsMTI4MzM1ODU2MSw4MjMzMzQ3
 MiwxNzEwNTI3NDU5LC00MTk0Mzk5NTEsLTE1MTA4NjU0OTksMT
 E5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4NTgyOTgsMTM4ODI3
