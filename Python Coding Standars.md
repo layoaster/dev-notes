@@ -364,11 +364,11 @@ Be sure to use the right style for module, function, method and in-line comments
 Python has a unique commenting style using doc strings. A docstring is a string that is the first statement in a package, module, class or function. These strings can be extracted automatically through the `__doc__` member of the object and are used by pydoc. (Try running pydoc on your module to see how it looks.) We always use the three double-quote `"""` format for docstrings (per [PEP 257](http://www.python.org/dev/peps/pep-0257/)). A docstring should be organized as a summary line (one physical line) terminated by a period, question mark, or exclamation point, followed by a blank line, followed by the rest of the docstring starting at the same cursor position as the first quote of the first line. The doctsring should finish with three double-quote in a separate line.
 
 There are three popular formats for docstring:
-* [Sphinx](https://www.sphinx-doc.org/en/1.7/ext/example_google.html)
+* [Sphinx](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/docstrings.html#an-example-class-with-docstrings)
 * [Google](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 * [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html)
 
-The Google style is more readable and Sphinx supports it so documentation can be generated automatically. The following is the Google style specification witouth type hints.
+The following is the specification for Sphinx style. This sty
 
 #### Modules
 A really short description of the module never hurts.
@@ -815,10 +815,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDUyNTY4MDYsMTI4MzM1ODU2MSw4Mj
-MzMzQ3MiwxNzEwNTI3NDU5LC00MTk0Mzk5NTEsLTE1MTA4NjU0
-OTksMTE5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4NTgyOTgsMT
-M4ODI3OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5NzIsMjExNjY2
-NDUyLDE2NDQ4Nzc3MDEsOTY5MjQxNjA3LC0yNDg3NTQ5MDEsLT
-E1NjM2NzY5NjgsMTU3Mjk2MDA4MSwtMTc0NTAwMzA3N119
+eyJoaXN0b3J5IjpbLTEzMTE1MTUwNDQsLTIwNDUyNTY4MDYsMT
+I4MzM1ODU2MSw4MjMzMzQ3MiwxNzEwNTI3NDU5LC00MTk0Mzk5
+NTEsLTE1MTA4NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEyMzYzLC
+0zNDk4NTgyOTgsMTM4ODI3OTAyOSwtMTY3MDgxODgwOSw4ODcz
+Mzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQxNjA3LC
+0yNDg3NTQ5MDEsLTE1NjM2NzY5NjgsMTU3Mjk2MDA4MSwtMTc0
+NTAwMzA3N119
 -->
