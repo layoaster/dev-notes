@@ -399,7 +399,7 @@ Certain aspects of a function should be documented in special sections. A generi
 
 :param [ParamName]: [ParamDescription], defaults to [DefaultParamVal]
 :type [ParamName]: [ParamType](, optional)
-
+...
 :raises [ErrorType]: [ErrorDescription]
 ...
 :return: [ReturnDescription]
@@ -409,8 +409,10 @@ Certain aspects of a function should be documented in special sections. A generi
 
 * `param:`
 	* List each parameter by name. A description should follow the name, and be separated by a colon and a space. If the description is too long to fit on a single 80-character line, use a hanging indent of 4 spaces (be consistent with the rest of the file).
-	* The description should mention required type(s) and the meaning of the argument.
+	* The description should mention the meaning of the argument.
 	* If a function accepts *foo (variable length argument lists) and/or **bar (arbitrary keyword arguments), they should be listed as *foo and **bar.
+
+* `type:` 
 
 * __Returns: (or Yields: for generators)__
 	* Describe the type and semantics of the return value. If the function only returns None, this section is not required.
@@ -837,7 +839,7 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNTU1MzUyNCwxMzY0MDkyMzQ2LC05NT
+eyJoaXN0b3J5IjpbLTc3OTUyODQ5NCwxMzY0MDkyMzQ2LC05NT
 k0OTQxMzIsLTIwNDUyNTY4MDYsMTI4MzM1ODU2MSw4MjMzMzQ3
 MiwxNzEwNTI3NDU5LC00MTk0Mzk5NTEsLTE1MTA4NjU0OTksMT
 E5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4NTgyOTgsMTM4ODI3
