@@ -371,10 +371,15 @@ There are three popular formats for docstring:
 The following is the specification for Sphinx style which is adopted by the [Python Foundation](https://devguide.python.org/documenting/). Note that Sphinx supports [reStructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html) so you can get style-rich text.
 
 #### Modules
-A really short description of the module never hurts.
+A really short description of the module content never hurts.
 
 ```
-Set of 
+"""
+Set of utility functions used on views.
+"""
+
+import os
+...
 ```
 
 #### Functions and Methods
@@ -819,11 +824,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDA5MzQwMzksLTk1OTQ5NDEzMiwtMj
-A0NTI1NjgwNiwxMjgzMzU4NTYxLDgyMzMzNDcyLDE3MTA1Mjc0
-NTksLTQxOTQzOTk1MSwtMTUxMDg2NTQ5OSwxMTk5NjEwNzcwLC
-03Mjc1MTIzNjMsLTM0OTg1ODI5OCwxMzg4Mjc5MDI5LC0xNjcw
-ODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0NTIsMTY0NDg3NzcwMS
-w5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3Njk2OCwxNTcy
-OTYwMDgxXX0=
+eyJoaXN0b3J5IjpbLTk5NjEyMTQzMiwtOTU5NDk0MTMyLC0yMD
+Q1MjU2ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1
+OSwtNDE5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLT
+cyNzUxMjM2MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4
+MTg4MDksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAxLD
+k2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4LDE1NzI5
+NjAwODFdfQ==
 -->
