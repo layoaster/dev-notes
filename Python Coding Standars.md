@@ -373,11 +373,10 @@ The following is the specification for Sphinx style which is adopted by the [Pyt
 #### Modules
 A really short description of the module content never hurts.
 
-```
+```python
 """
 Set of utility functions used on views.
 """
-
 import os
 ...
 ```
@@ -824,7 +823,7 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NjEyMTQzMiwtOTU5NDk0MTMyLC0yMD
+eyJoaXN0b3J5IjpbMTM2NDA5MjM0NiwtOTU5NDk0MTMyLC0yMD
 Q1MjU2ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1
 OSwtNDE5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLT
 cyNzUxMjM2MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4
