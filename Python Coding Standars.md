@@ -391,10 +391,10 @@ A function must have a docstring, unless it meets all of the following criteria:
 
 A docstring should give enough information to write a call to the function without reading the function's code. A docstring should describe the function's calling syntax and its semantics, not its implementation. For tricky code, comments alongside the code are more appropriate than using docstrings.
 
-Certain aspects of a function should be documented in special sections, listed below. Each section begins with a heading line, which ends with a colon. Sections should be indented two spaces, except for the heading.
+Certain aspects of a function should be documented in special sections, a general 
 
 * __Args:__
-	* List each parameter by name. A description should follow the name, and be separated by a colon and a space. If the description is too long to fit on a single 80-character line, use a hanging indent of 2 or 4 spaces (be consistent with the rest of the file).
+	* List each parameter by name. A description should follow the name, and be separated by a colon and a space. If the description is too long to fit on a single 80-character line, use a hanging indent of 4 spaces (be consistent with the rest of the file).
 	* The description should mention required type(s) and the meaning of the argument.
 	* If a function accepts *foo (variable length argument lists) and/or **bar (arbitrary keyword arguments), they should be listed as *foo and **bar.
 
@@ -823,11 +823,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NDA5MjM0NiwtOTU5NDk0MTMyLC0yMD
-Q1MjU2ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1
-OSwtNDE5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLT
-cyNzUxMjM2MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4
-MTg4MDksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAxLD
-k2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNTYzNjc2OTY4LDE1NzI5
-NjAwODFdfQ==
+eyJoaXN0b3J5IjpbLTEyMTYyNDk1MzMsMTM2NDA5MjM0NiwtOT
+U5NDk0MTMyLC0yMDQ1MjU2ODA2LDEyODMzNTg1NjEsODIzMzM0
+NzIsMTcxMDUyNzQ1OSwtNDE5NDM5OTUxLC0xNTEwODY1NDk5LD
+ExOTk2MTA3NzAsLTcyNzUxMjM2MywtMzQ5ODU4Mjk4LDEzODgy
+NzkwMjksLTE2NzA4MTg4MDksODg3MzM5OTcyLDIxMTY2NjQ1Mi
+wxNjQ0ODc3NzAxLDk2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNTYz
+Njc2OTY4XX0=
 -->
