@@ -393,7 +393,7 @@ A docstring should give enough information to write a call to the function witho
 
 Certain aspects of a function should be documented in special sections, a general 
 
-* __Args:__
+* `param:`
 	* List each parameter by name. A description should follow the name, and be separated by a colon and a space. If the description is too long to fit on a single 80-character line, use a hanging indent of 4 spaces (be consistent with the rest of the file).
 	* The description should mention required type(s) and the meaning of the argument.
 	* If a function accepts *foo (variable length argument lists) and/or **bar (arbitrary keyword arguments), they should be listed as *foo and **bar.
@@ -823,11 +823,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTYyNDk1MzMsMTM2NDA5MjM0NiwtOT
-U5NDk0MTMyLC0yMDQ1MjU2ODA2LDEyODMzNTg1NjEsODIzMzM0
-NzIsMTcxMDUyNzQ1OSwtNDE5NDM5OTUxLC0xNTEwODY1NDk5LD
-ExOTk2MTA3NzAsLTcyNzUxMjM2MywtMzQ5ODU4Mjk4LDEzODgy
-NzkwMjksLTE2NzA4MTg4MDksODg3MzM5OTcyLDIxMTY2NjQ1Mi
-wxNjQ0ODc3NzAxLDk2OTI0MTYwNywtMjQ4NzU0OTAxLC0xNTYz
-Njc2OTY4XX0=
+eyJoaXN0b3J5IjpbMjY5MDcyMzI3LDEzNjQwOTIzNDYsLTk1OT
+Q5NDEzMiwtMjA0NTI1NjgwNiwxMjgzMzU4NTYxLDgyMzMzNDcy
+LDE3MTA1Mjc0NTksLTQxOTQzOTk1MSwtMTUxMDg2NTQ5OSwxMT
+k5NjEwNzcwLC03Mjc1MTIzNjMsLTM0OTg1ODI5OCwxMzg4Mjc5
+MDI5LC0xNjcwODE4ODA5LDg4NzMzOTk3MiwyMTE2NjY0NTIsMT
+Y0NDg3NzcwMSw5NjkyNDE2MDcsLTI0ODc1NDkwMSwtMTU2MzY3
+Njk2OF19
 -->
