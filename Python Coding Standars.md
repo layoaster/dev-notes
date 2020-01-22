@@ -368,7 +368,7 @@ There are three popular formats for docstring:
 * [Google](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 * [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html)
 
-The following is the specification for Sphinx style which . Note that Sphinx supports [reStructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html)
+The following is the specification for Sphinx style which is adopted by python. Note that Sphinx supports [reStructuredText](https://docutils.sourceforge.io/docs/user/rst/quickref.html)
 
 #### Modules
 A really short description of the module never hurts.
@@ -815,11 +815,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU0ODk2Nzc4LC0yMDQ1MjU2ODA2LDEyOD
-MzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1OSwtNDE5NDM5OTUx
-LC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUxMjM2MywtMz
-Q5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MDksODg3MzM5
-OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0MTYwNywtMj
-Q4NzU0OTAxLC0xNTYzNjc2OTY4LDE1NzI5NjAwODEsLTE3NDUw
-MDMwNzddfQ==
+eyJoaXN0b3J5IjpbLTk1OTQ5NDEzMiwtMjA0NTI1NjgwNiwxMj
+gzMzU4NTYxLDgyMzMzNDcyLDE3MTA1Mjc0NTksLTQxOTQzOTk1
+MSwtMTUxMDg2NTQ5OSwxMTk5NjEwNzcwLC03Mjc1MTIzNjMsLT
+M0OTg1ODI5OCwxMzg4Mjc5MDI5LC0xNjcwODE4ODA5LDg4NzMz
+OTk3MiwyMTE2NjY0NTIsMTY0NDg3NzcwMSw5NjkyNDE2MDcsLT
+I0ODc1NDkwMSwtMTU2MzY3Njk2OCwxNTcyOTYwMDgxLC0xNzQ1
+MDAzMDc3XX0=
 -->
