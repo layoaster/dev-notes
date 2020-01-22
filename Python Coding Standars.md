@@ -464,20 +464,25 @@ Classes should have a doc string below the class definition describing the class
 class SimpleBleDevice(Peripheral):
     """Conceptual class representation of a simple BLE device (GATT Server).
        
-       It is essentially an extended combination of the 
-       :class:`bluepy.btle.Peripheral` and :class:`bluepy.btle.ScanEntry` classes
+    It is essentially an extended combination of the 
+    :class:`bluepy.btle.Peripheral` and :class:`bluepy.btle.ScanEntry` classes
 
- :param client: A handle to the :class:`simpleble.SimpleBleClient` client object that detected the device
- :type client: class:`simpleble.SimpleBleClient`
- :param addr: Device MAC address, defaults to None
- :type addr: str, optional
- :param addrType: Device address type - one of ADDR_TYPE_PUBLIC or ADDR_TYPE_RANDOM, defaults to ADDR_TYPE_PUBLIC
- :type addrType: str, optional
- :param iface: Bluetooth interface number (0 = /dev/hci0) used for the connection, defaults to 0
- :type iface: int, optional
- :param data: A list of tuples (adtype, description, value) containing the AD type code, human-readable description and value for all available advertising data items, defaults to None
- :type data: list, optional
- :param rssi: Received Signal Strength Indication for the last received broadcast from the device. This is an integer value measured in dB, where 0 dB is the maximum (theoretical) signal strength, and more negative numbers indicate a weaker signal, defaults to 0
+    :param client: A handle to the :class:`simpleble.SimpleBleClient` client 
+        object that detected the device
+    :type client: class:`simpleble.SimpleBleClient`
+    :param addr: Device MAC address, defaults to None
+    :type addr: str, optional
+    :param addrType: Device address type - one of ADDR_TYPE_PUBLIC or 
+        ADDR_TYPE_RANDOM, defaults to ADDR_TYPE_PUBLIC
+    :type addrType: str, optional
+    :param iface: Bluetooth interface number (0 = /dev/hci0) used for the 
+        connection, defaults to 0
+    :type iface: int, optional
+    :param data: A list of tuples (adtype, description, value) containing the AD 
+        type code, human-readable description and value for all available 
+        advertising data items, defaults to None
+    :type data: list, optional
+    :param rssi: Received Signal Strength Indication for the last received broadcast from the device. This is an integer value measured in dB, where 0 dB is the maximum (theoretical) signal strength, and more negative numbers indicate a weaker signal, defaults to 0
  :type rssi: int, optional
  :param connectable: `True` if the device supports connections, and `False` otherwise (typically used for advertising ‘beacons’)., defaults to `False`
  :type connectable: bool, optional
@@ -864,11 +869,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODY5MjU5Miw1NDQxODYxOTQsMTQxMz
-IwNDY2NywxMzY0MDkyMzQ2LC05NTk0OTQxMzIsLTIwNDUyNTY4
-MDYsMTI4MzM1ODU2MSw4MjMzMzQ3MiwxNzEwNTI3NDU5LC00MT
-k0Mzk5NTEsLTE1MTA4NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEy
-MzYzLC0zNDk4NTgyOTgsMTM4ODI3OTAyOSwtMTY3MDgxODgwOS
-w4ODczMzk5NzIsMjExNjY2NDUyLDE2NDQ4Nzc3MDEsOTY5MjQx
-NjA3XX0=
+eyJoaXN0b3J5IjpbLTEwMjM5MTc1MzAsNTQ0MTg2MTk0LDE0MT
+MyMDQ2NjcsMTM2NDA5MjM0NiwtOTU5NDk0MTMyLC0yMDQ1MjU2
+ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUyNzQ1OSwtND
+E5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3NzAsLTcyNzUx
+MjM2MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2NzA4MTg4MD
+ksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0ODc3NzAxLDk2OTI0
+MTYwN119
 -->
