@@ -5,6 +5,9 @@
 
 # Architecture tips
 * https://12factor.net/
+# Testing tips
+
+* Test Celery apps/tasks: https://docs.celeryproject.org/en/stable/userguide/testing.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNTE3MTY4Ml19
+eyJoaXN0b3J5IjpbMTczNjMzOTAyMywxMTI1MTcxNjgyXX0=
 -->
