@@ -3,6 +3,8 @@
 ## Introduction
 We use a slightly modified version of the official [Style Guide for Python Code (PEP 8)](http://www.python.org/dev/peps/pep-0008/) and [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html) as a basis for our coding standards. This article describes our modifications and additions and also contains a summary of the coding standards. Reading the official style guide is highly recommended before moving on, as this article merely complements it.
 
+In practice we use [black]() as a formatting tool where
+
 ## Required Reading
 * [PEP8 - Python's Official Style Guide](http://www.python.org/dev/peps/pep-0008/)
 * [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html)
@@ -865,11 +867,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTk3ODEzNzUsLTEwNTkxMTcyOTMsNT
-Q0MTg2MTk0LDE0MTMyMDQ2NjcsMTM2NDA5MjM0NiwtOTU5NDk0
-MTMyLC0yMDQ1MjU2ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMT
-cxMDUyNzQ1OSwtNDE5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2
-MTA3NzAsLTcyNzUxMjM2MywtMzQ5ODU4Mjk4LDEzODgyNzkwMj
-ksLTE2NzA4MTg4MDksODg3MzM5OTcyLDIxMTY2NjQ1MiwxNjQ0
-ODc3NzAxXX0=
+eyJoaXN0b3J5IjpbLTMzOTEwNTM5MywtMTYxOTc4MTM3NSwtMT
+A1OTExNzI5Myw1NDQxODYxOTQsMTQxMzIwNDY2NywxMzY0MDky
+MzQ2LC05NTk0OTQxMzIsLTIwNDUyNTY4MDYsMTI4MzM1ODU2MS
+w4MjMzMzQ3MiwxNzEwNTI3NDU5LC00MTk0Mzk5NTEsLTE1MTA4
+NjU0OTksMTE5OTYxMDc3MCwtNzI3NTEyMzYzLC0zNDk4NTgyOT
+gsMTM4ODI3OTAyOSwtMTY3MDgxODgwOSw4ODczMzk5NzIsMjEx
+NjY2NDUyXX0=
 -->
