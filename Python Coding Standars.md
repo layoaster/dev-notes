@@ -6,7 +6,7 @@ We use a slightly modified version of the official [Style Guide for Python Code 
 In practice:
 
 * We use [black](https://github.com/psf/black) (a formatting tool) as a style enforcer for much of what it is going to be described in the following sections.
-* When coding Django projects there is also some coding sty
+* When coding Django projects there is also some coding style guide that serves as a complement of this one.
 
 ## Required Reading
 * [PEP8 - Python's Official Style Guide](http://www.python.org/dev/peps/pep-0008/)
@@ -870,11 +870,11 @@ Note that '0' (i.e., 0 as string) evaluates to true.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMzMxODI5NCwxNTE1NDM3NzA0LC0zMz
-kxMDUzOTMsLTE2MTk3ODEzNzUsLTEwNTkxMTcyOTMsNTQ0MTg2
-MTk0LDE0MTMyMDQ2NjcsMTM2NDA5MjM0NiwtOTU5NDk0MTMyLC
-0yMDQ1MjU2ODA2LDEyODMzNTg1NjEsODIzMzM0NzIsMTcxMDUy
-NzQ1OSwtNDE5NDM5OTUxLC0xNTEwODY1NDk5LDExOTk2MTA3Nz
-AsLTcyNzUxMjM2MywtMzQ5ODU4Mjk4LDEzODgyNzkwMjksLTE2
-NzA4MTg4MDldfQ==
+eyJoaXN0b3J5IjpbNDk3MDM3NTE4LDE1MTU0Mzc3MDQsLTMzOT
+EwNTM5MywtMTYxOTc4MTM3NSwtMTA1OTExNzI5Myw1NDQxODYx
+OTQsMTQxMzIwNDY2NywxMzY0MDkyMzQ2LC05NTk0OTQxMzIsLT
+IwNDUyNTY4MDYsMTI4MzM1ODU2MSw4MjMzMzQ3MiwxNzEwNTI3
+NDU5LC00MTk0Mzk5NTEsLTE1MTA4NjU0OTksMTE5OTYxMDc3MC
+wtNzI3NTEyMzYzLC0zNDk4NTgyOTgsMTM4ODI3OTAyOSwtMTY3
+MDgxODgwOV19
 -->
